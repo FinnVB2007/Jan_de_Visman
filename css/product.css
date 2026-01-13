@@ -150,3 +150,8 @@ header {
     background-position: center;
     background-size: cover;
 }
+
+.logo img:hover {
+    transform: scale(1.06);
+    transition: 1s;
+}

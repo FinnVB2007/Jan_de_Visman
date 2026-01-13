@@ -135,3 +135,8 @@ footer {
 .footerLeft div {
     margin: 0vw;
 }
+
+.logo img:hover {
+    transform: scale(1.06);
+    transition: 1s;
+}

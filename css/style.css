@@ -90,6 +90,11 @@ nav img {
     border: 2px solid rgba(255, 255, 255, 0);
 }
 
+.logo img:hover {
+    transform: scale(1.06);
+    transition: 1s;
+}
+
 
 .links a:hover {
     background-color: #f68f51;
