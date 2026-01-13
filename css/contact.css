@@ -223,6 +223,10 @@ footer {
     margin: 0vw;
 }
 
+.logo {
+    transition: 1s;
+}
+
 .logo img:hover {
     transform: scale(1.06);
     transition: 1s;

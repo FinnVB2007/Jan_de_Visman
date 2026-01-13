@@ -90,6 +90,11 @@ nav img {
     border: 2px solid rgba(255, 255, 255, 0);
 }
 
+.logo {
+    transition: 1s;
+}
+
+
 .logo img:hover {
     transform: scale(1.06);
     transition: 1s;
@@ -142,7 +147,3 @@ footer {
 }
 
 
-.logo img:hover {
-    transform: scale(1.06);
-    transition: 1s;
-}

@@ -140,3 +140,7 @@ footer {
     transform: scale(1.06);
     transition: 1s;
 }
+
+.logo {
+    transition: 1s;
+}
