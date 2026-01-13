@@ -64,8 +64,20 @@ form button {
     margin-top: 2.5vw;
     width: 80vw;
     height: 3.5vw;
-    background-color: #a5a5a5;
+    background-color: #737373;
+    border: 2.5px solid black;
 }
+
+form button:hover {
+    background-color: #f68f51;
+    transition: .2s;
+}
+
+form button:active {
+    background-color: #bde7fa;
+    transition: .2s;
+}
+
 
 form span {
     color: #b30303;
