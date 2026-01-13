@@ -15,7 +15,7 @@
     </div>
     <div class="links">
         <a href="index.php">Home</a>
-        <a href="">Producten</a>
+        <a href="product.php">Producten</a>
         <a href="">Gallerij</a>
         <a href="">Contact</a>
     </div>
