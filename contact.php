@@ -31,6 +31,9 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" href="css/contact.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+    </style>
 </head>
 <body>
 <nav>

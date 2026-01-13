@@ -71,6 +71,30 @@ form span {
     color: #b30303;
 }
 
+P {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -81,6 +105,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 
 nav {
     display: flex;
@@ -102,7 +127,7 @@ a {
     text-decoration: none;
     padding: 5px 10px;
     color: black;
-    font-family: Playball, cursive;
+    font-family: "Playball", cursive;
     font-size: 1.3rem;
 }
 
@@ -183,7 +208,6 @@ footer {
 .footerLeft div {
     margin: 0vw;
 }
-
 
 
 
