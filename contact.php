@@ -1,0 +1,93 @@
+<?php
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    $errors = [];
+
+    if (empty($name)) {
+        $errors['name'] = 'De naam moet ingevuld zijn';
+    }
+
+    if (empty($email)) {
+        $errors['email'] = 'Het e-mailadres moet ingevuld zijn';
+    }
+
+    if (empty($message)) {
+        $errors['message'] = 'Het bericht moet ingevuld zijn';
+    }
+
+    if (empty($errors)) {
+        header('Location: index.php');
+        exit;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+    </div>
+    <div class="links">
+        <a href="index.php">Home</a>
+        <a href="products.php">Producten</a>
+        <a href="gallery.php">Gallerij</a>
+        <a href="contact.php">Contact</a>
+    </div>
+</nav>
+<header>
+    <h1>Kom in contact!</h1>
+    <p>Vul het onderstaande formulier in met uw gegevens om in contact te komen met ons.</p>
+</header>
+<main>
+    <form action="" method="post">
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" placeholder="Naam" value="<?= $name ?? '' ?>">
+        <?php if (isset($errors['name'])) { ?>
+            <span class="help is-danger"><?= htmlentities($errors['name']) ?></span>
+        <?php } ?>
+
+        <label for="email">E-mailadres</label>
+        <input type="text" id="email" name="email" placeholder="E-mailadres"
+               value="<?= $email ?? '' ?>">
+        <?php if (isset($errors['email'])) { ?>
+            <span class="help is-danger"><?= htmlentities(($errors['email'])) ?></span>
+        <?php } ?>
+
+
+        <label for="message">Bericht</label>
+        <textarea name="message" id="message" placeholder="Bericht"><?= $message ?? '' ?></textarea>
+        <?php if (isset($errors['message'])) { ?>
+            <span class="help is-danger"><?= htmlentities($errors['message']) ?></span>
+        <?php } ?>
+        <button type="submit" name="submit" id="submit">Verstuur</button>
+
+
+    </form>
+
+</main>
+<footer>
+    <div class="footerLeft">
+        <div>
+            <a href="index.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+        </div>
+        <div>
+            <p>Copyright 2026 Jan de Visman</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/jandevisman/"><img src="images/facebooklogo.png" alt="" class="mediaLogo"></a>
+            <a href="https://www.instagram.com/jande_visman/"><img src="images/instalogo.png" alt="" class="mediaLogo"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
