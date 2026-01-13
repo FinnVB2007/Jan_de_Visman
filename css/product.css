@@ -9,7 +9,16 @@ nav {
 
 
 header {
-
+    color: #f68f51;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+    padding: 225px 75px;
+    border-radius: 5px;
+    background-image: url(../images/vis-kar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 

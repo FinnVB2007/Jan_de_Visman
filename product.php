@@ -18,12 +18,12 @@
 
 
 <header>
-
+    <h1>Bekijk ons accortiment!</h1>
 </header>
 
 
 <main>
-
+    database conectie hier voor die vissen
 </main>
 
 
