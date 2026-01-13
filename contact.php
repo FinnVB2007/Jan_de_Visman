@@ -54,21 +54,21 @@ if (isset($_POST['submit'])) {
 <main>
     <form action="" method="post">
         <label for="name">Naam</label>
-        <input type="text" id="name" name="name" placeholder="Naam" value="<?= $name ?? '' ?>">
+        <input type="text" id="name" name="name" placeholder="Naam" value="<?= htmlentities($name ?? '')?>">
         <?php if (isset($errors['name'])) { ?>
             <span class="help is-danger"><?= htmlentities($errors['name']) ?></span>
         <?php } ?>
 
         <label for="email">E-mailadres</label>
         <input type="text" id="email" name="email" placeholder="E-mailadres"
-               value="<?= $email ?? '' ?>">
+               value="<?= htmlentities($email ?? '')?>">
         <?php if (isset($errors['email'])) { ?>
             <span class="help is-danger"><?= htmlentities(($errors['email'])) ?></span>
         <?php } ?>
 
 
         <label for="message">Bericht</label>
-        <textarea name="message" id="message" placeholder="Bericht"><?= $message ?? '' ?></textarea>
+        <textarea name="message" id="message" placeholder="Bericht"><?= htmlentities($message ?? '')?></textarea>
         <?php if (isset($errors['message'])) { ?>
             <span class="help is-danger"><?= htmlentities($errors['message']) ?></span>
         <?php } ?>
