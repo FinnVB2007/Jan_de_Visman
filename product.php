@@ -13,7 +13,14 @@
 
 
 <nav>
-
+    <div class="logo">
+        <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+    </div>
+    <div class="links">
+        <a href="index.php">Home</a>
+        <a href="">Gallerij</a>
+        <a href="">Contact</a>
+    </div>
 </nav>
 
 
@@ -28,7 +35,18 @@
 
 
 <footer>
-
+    <div class="footerLeft">
+        <div>
+            <a href="index.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+        </div>
+        <div>
+            <p>Copyright 2026 Jan de Visman</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/jandevisman/"><img src="images/facebooklogo.png" alt="" class="mediaLogo"></a>
+            <a href="https://www.instagram.com/jande_visman/"><img src="images/instalogo.png" alt="" class="mediaLogo"></a>
+        </div>
+    </div>
 </footer>
 
 
