@@ -223,8 +223,9 @@ footer {
     margin: 0vw;
 }
 
-.logo {
-    transition: 1s;
+
+.logo img{
+    transition: .7s;
 }
 
 .logo img:hover {

@@ -156,6 +156,7 @@ header {
     transition: 1s;
 }
 
-.logo {
-    transition: 1s;
+
+.logo img{
+    transition: .7s;
 }

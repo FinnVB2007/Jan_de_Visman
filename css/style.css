@@ -90,8 +90,8 @@ nav img {
     border: 2px solid rgba(255, 255, 255, 0);
 }
 
-.logo {
-    transition: 1s;
+.logo img{
+    transition: .7s;
 }
 
 
