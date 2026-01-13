@@ -138,6 +138,7 @@ footer {
 }
 
 header {
+    font-family: "Playball", cursive;
     color: #f68f51;
     text-align: center;
     gap: 20px;
