@@ -19,8 +19,8 @@
     <div class="links">
         <a href="index.php">Home</a>
         <a href="product.php">Producten</a>
-        <a href="">Gallerij</a>
-        <a href="">Contact</a>
+        <a href="gallery.php">Gallerij</a>
+        <a href="contact.php">Contact</a>
     </div>
 </nav>
 
