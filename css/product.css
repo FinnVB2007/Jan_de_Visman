@@ -1,35 +1,3 @@
-body {
-
-}
-
-
-nav {
-
-}
-
-
-header {
-    color: #f68f51;
-    text-align: center;
-    gap: 20px;
-    align-items: center;
-    padding: 225px 75px;
-    border-radius: 5px;
-    background-image: url(../images/vis-kar.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-main {
-
-}
-
-
-footer {
-
-}
 
 P {
     font-size: 1rem;
@@ -167,4 +135,17 @@ footer {
 
 .footerLeft div {
     margin: 0vw;
+}
+
+header {
+    color: #f68f51;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+    padding: 225px 75px;
+    border-radius: 5px;
+    background-image: url(../images/vis-kar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
