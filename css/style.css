@@ -1,9 +1,11 @@
 P {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: #f68f51;
+    font-family: "Playball", cursive;
 }
 
 h2 {
@@ -160,10 +162,26 @@ main section {
 .top {
     display: flex;
     flex-direction: row;
-    height: 10vh;
+
 }
 
 .bottom {
     display: flex;
     flex-direction: row;
+
+}
+
+main section {
+    margin: 1vh 7vw;
+}
+
+
+main section div {
+    margin: 0vh 2vw;
+    width: 40vw;
+}
+
+main section div img   {
+    width: 40vw;
+    border: 3px solid #e0d9cc;
 }
