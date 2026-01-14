@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
 
 
     </form>
-
+    <h2>Voeg je Koptekst hier toe</h2>
 </main>
 <footer>
     <div class="footerLeft">
