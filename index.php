@@ -18,6 +18,7 @@
         <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
     </div>
     <div class="links">
+        <a href="admin.php">Admin</a>
         <a href="index.php">Home</a>
         <a href="products.php">Producten</a>
         <a href="gallery.php">Galerij</a>
