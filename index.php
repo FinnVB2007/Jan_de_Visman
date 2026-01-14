@@ -39,7 +39,7 @@
             <h1>Ons aanbod</h1>
             <p>
                 Met ons enthousiasme, verse visproducten en nostalgische viskar wordt jouw feest een succes! We hebben ervaring met kleine feestjes én grote evenementen… en alles wat daartussen zit.
-                Als het met vis te maken heeft, kunnen we het waarschijnlijk leveren. We hebben een breed assortiment. Onze kibbeling valt enorm goed in de smaak. We zijn daarnaast  gespecialiseerd in het roken van zalm. Met onze mobiele oven roken we ook op locatie. Dat geeft niet alleen een heerlijke geur, vaak komen mensen gezellig bij onze rookoven staan.
+                Als het met vis te maken heeft, kunnen we het waarschijnlijk leveren. We hebben een breed assortiment. Onze kibbeling valt enorm goed in de smaak. We zijn daarnaast gespecialiseerd in het roken van zalm. Met onze mobiele oven roken we ook op locatie. Dat geeft niet alleen een heerlijke geur, vaak komen mensen gezellig bij onze rookoven staan.
                 Onze viskar op jouw feestje? Vul bij ‘contact’ op onze website het formulier in en we nemen contact met je op.
             </p>
         </div>
