@@ -4,12 +4,12 @@
 require_once "includes/connection.php";
 
 
-$query = "SELECT * FROM jan_de_visman";
+$query = "SELECT * FROM fishes";
 $result = mysqli_query($db, $query);
 
-$morejan_de_visman = [];
+$morefishes = [];
 while ($row = mysqli_fetch_assoc($result)) {
-    $morejan_de_visman[] = $row;
+    $morefishes[] = $row;
 }
 
 mysqli_close($db);
