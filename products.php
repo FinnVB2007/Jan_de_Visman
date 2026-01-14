@@ -41,15 +41,15 @@
 
 
 
-    <?php //loop through all products
-    foreach ( - as $i => - ) {
-        ?>
-    <article>
-            <h2><?= $ ['name'] ?></h2>
-            <p><?= $ ['beschrijving'] ?></p>
-            <a><a href="products.php?id=<?= $i ?>">product</a></a>
-    </article>
-    <?php } ?>
+<!--    --><?php ////loop through all products
+//    foreach ( - as $i => - ) {
+//        ?>
+<!--    <article>-->
+<!--            <h2>--><?php //= $ ['name'] ?><!--</h2>-->
+<!--            <p>--><?php //= $ ['beschrijving'] ?><!--</p>-->
+<!--            <a><a href="products.php?id=--><?php //= $i ?><!--">product</a></a>-->
+<!--    </article>-->
+<!--    --><?php //} ?>
 </main>
 
 
