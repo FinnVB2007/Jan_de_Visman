@@ -44,7 +44,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1vw;
-    margin-top: 15vh;
+    margin-top: 20vh;
     background-color: #e0d9cc;
     margin-left: 20vw;
     margin-right: 20vw;
@@ -91,7 +91,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 10vw;
+    padding: 0vh 10vw;
     background-color: #e0d9cc;
     align-items: center;
 }
