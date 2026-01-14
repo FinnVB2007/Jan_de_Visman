@@ -31,9 +31,16 @@ session_destroy();
     </style>
 </head>
 <body>
+<nav>
+    <div class="logo">
+        <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+    </div>
+    <div class="links">
+    </div>
+</nav>
 <header>
     <h1>
-        Bedankt voor je bericht <?=$name?>.
+        Bedankt voor uw bericht <?=$name?>.
     </h1>
     <p>We nemen zo spoedig mogelijk contact met u op.</p>
     <a href="index.php">Bevestigen</a>
