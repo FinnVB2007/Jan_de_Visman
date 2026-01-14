@@ -95,6 +95,10 @@ header a:active {
     transition: .2s;
 }
 
+header h1 {
+    color: #f68f51;
+}
+
 nav {
     display: flex;
     flex-direction: row;
