@@ -56,7 +56,7 @@ mysqli_close($db);
         <h2><?= $fish['name'] ?></h2>
         <p><?= $fish['price_range'] ?></p>
         <p><?= $fish['image'] ?></p>
-        <a href="details.php?id=<?= $i ?>">Details</a>
+        <a href="detail.php?id=<?= $fish['id'] ?>">Details</a>
     </article
         <?php } ?>
 </main>

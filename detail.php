@@ -35,15 +35,16 @@ mysqli_close($db);
 </head>
 <body>
 <div class="container px-4">
-    <h1 class="title mt-4"><?= $fish['full_name'] ?></h1>
+    <h1 class="title mt-4"><?= $fish['name'] ?></h1>
     <section class="content">
         <ul>
-            <li>lenght: <?= $fish['price_range'] ?></li>
-            <li>premiere: <?= $fish['image'] ?></li>
+            <li>Volledige naam: <?= $fish['full_name'] ?></li>
+            <li>Price range: <?= $fish['price_range'] ?></li>
+            <li>Foto: <?= $fish['image'] ?></li>
         </ul>
     </section>
     <div>
-        <a class="button" href="index.php">Terug naar productpagina</a>
+        <a class="button" href="products.php">Terug naar productpagina</a>
     </div>
 </div>
 </body>
