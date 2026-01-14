@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
     </div>
     <div class="links">
         <a href="index.php">Home</a>
-        <a href="product.php">Producten</a>
+        <a href="products.php">Producten</a>
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
     </div>

@@ -22,7 +22,7 @@
     </div>
     <div class="links">
         <a href="index.php">Home</a>
-        <a href="product.php">Producten</a>
+        <a href="products.php">Producten</a>
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
     </div>
@@ -36,6 +36,20 @@
 
 <main>
     database conectie hier voor die vissen
+
+
+
+
+
+    <?php //loop through all products
+    foreach ( - as $i => - ) {
+        ?>
+    <article>
+            <h2><?= $ ['name'] ?></h2>
+            <p><?= $ ['beschrijving'] ?></p>
+            <a><a href="products.php?id=<?= $i ?>">product</a></a>
+    </article>
+    <?php } ?>
 </main>
 
 
