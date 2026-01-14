@@ -148,8 +148,6 @@ footer {
 
 
 main {
-    display: flex;
-    flex-direction: column;
     background-color: #fffcf8;
 }
 
