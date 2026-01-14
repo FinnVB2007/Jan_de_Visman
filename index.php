@@ -25,6 +25,7 @@
     </div>
 </nav>
 <main>
+
     <section class="top">
         <div><img src="images/Gert-en-Jan.png" alt="Twee mannen op de foto die rechts Jan en links Gerd zijn."></div>
         <div>

@@ -170,12 +170,21 @@ main section {
     display: flex;
     flex-direction: row;
 
+    transform: translateX(-100px);
+    opacity: 0;
+
+    animation: slideIn 1.2s ease-out forwards;
 }
 
 .bottom {
     display: flex;
     flex-direction: row;
     padding-bottom: 5vh;
+
+    transform: translateX(100px);
+    opacity: 0;
+
+    animation: slideInRight 1.2s ease-out forwards;
 }
 
 main section {
@@ -192,3 +201,26 @@ main section div img   {
     width: 40vw;
     border: 3px solid #e0d9cc;
 }
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
