@@ -32,7 +32,7 @@
               Een gymleraar en een communicatieadviseur die samen verse vis bereiden en verkopen uit een omgebouwde paardentrailer. Is dat geen bijzonder verhaal? Waar ons verhaal begint? Bij een gezamenlijke passie voor vis… en gezelligheid :-).
                 <br>
                 <br>
-              Jan deed zijn kennis en ervaring met vis op tijdens zijn bijbaan bij Visgilde Leen de jong. Hij is daarnaast op het gebied van klussen een alleskunner. Onze mooie viskar is daar het resultaat van. Gert heeft vanuit zijn achtergrond veel kennis van communicatie en marketing. Zijn grote netwerk komt goed van pas.
+              Jan deed zijn kennis en ervaring met vis op tijdens zijn bijbaan bij Visgilde Leen de Jong. Hij is daarnaast op het gebied van klussen een alleskunner. Onze mooie viskar is daar het resultaat van. Gert heeft vanuit zijn achtergrond veel kennis van communicatie en marketing. Zijn grote netwerk komt goed van pas.
                 <br>
                 <br>
 
