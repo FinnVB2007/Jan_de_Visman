@@ -34,12 +34,11 @@ body {
     font-style: normal;
 }
 
-.jost-<uniquifier> {
-           font-family: "Jost", sans-serif;
-           font-optical-sizing: auto;
-           font-weight: <weight>;
-           font-style: normal;
-       }
+.jost- {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 nav {
     display: flex;
