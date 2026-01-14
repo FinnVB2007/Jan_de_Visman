@@ -147,3 +147,23 @@ footer {
 }
 
 
+main {
+    background-color: #fffcf8;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+}
