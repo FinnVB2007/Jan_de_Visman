@@ -160,6 +160,7 @@ main section {
 
 
 .top {
+    padding-top: 5vh;
     display: flex;
     flex-direction: row;
 
@@ -168,7 +169,7 @@ main section {
 .bottom {
     display: flex;
     flex-direction: row;
-
+    padding-bottom: 5vh;
 }
 
 main section {
