@@ -15,6 +15,20 @@ if (isset($_POST['submit'])) {
             'message' => $message,
     ];
 
+    $errors = [];
+
+    if (empty($name)) {
+        $errors['name'] = 'De naam moet ingevuld zijn';
+    }
+
+    if (empty($email)) {
+        $errors['email'] = 'Het e-mailadres moet ingevuld zijn';
+    }
+
+    if (empty($message)) {
+        $errors['message'] = 'Het bericht moet ingevuld zijn';
+    }
+
     if (empty($errors)) {
 
         $query = "UPDATE forms
