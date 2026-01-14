@@ -101,10 +101,6 @@ mysqli_close($db);
         <input id="message" type="text" name="message" value="<?= htmlentities($form['message']) ?>"/>
         <span class="errors"><?= isset($errors['message']) ? $errors['message'] : '' ?></span>
     </div>
-    <div class="data-submit">
-        <input type="hidden" name="id" value="<?= $formId ?>"/>
-        <input type="submit" name="submit" value="Save"/>
-    </div>
 </form>
 <div>
     <a href="index.php">Go back to the list</a>
