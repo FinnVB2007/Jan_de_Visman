@@ -66,6 +66,10 @@ mysqli_close($db);
     <title>form Collection Edit</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 <body>
 
 <nav>
