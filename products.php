@@ -1,6 +1,7 @@
 <?php
 
-
+//connect db
+require_once "includes/connection.php";
 
 
 ?>
