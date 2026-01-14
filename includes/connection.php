@@ -2,7 +2,7 @@
 
 // General settings
 $host = "127.0.0.1";
-$database = "//";
+$database = "jan_de_visman";
 $user = "root";
 $password = "";
 
