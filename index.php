@@ -30,7 +30,10 @@
             <h1>Over ons</h1>
             <p>
               Een gymleraar en een communicatieadviseur die samen verse vis bereiden en verkopen uit een omgebouwde paardentrailer. Is dat geen bijzonder verhaal? Waar ons verhaal begint? Bij een gezamenlijke passie voor vis… en gezelligheid :-).
-              Jan deed zijn kennis en ervaring met vis op tijdens zijn bijbaan bij Visgilde Leen de jong. Hij is daarnaast op het gebied van klussen een alleskunner. Onze mooie viskar is daar het resultaat van. Gert heeft vanuit zijn achtergrond veel kennis van communicatie en marketing. Zijn grote netwerk komt goed van pas. Ons doel? Leuke dingen doen, mooie plaatsen bezoeken, toffe mensen ontmoeten en hen blij maken met onze verse vis!
+
+              Jan deed zijn kennis en ervaring met vis op tijdens zijn bijbaan bij Visgilde Leen de jong. Hij is daarnaast op het gebied van klussen een alleskunner. Onze mooie viskar is daar het resultaat van. Gert heeft vanuit zijn achtergrond veel kennis van communicatie en marketing. Zijn grote netwerk komt goed van pas.
+
+                Ons doel? Leuke dingen doen, mooie plaatsen bezoeken, toffe mensen ontmoeten en hen blij maken met onze verse vis!
             </p>
         </div>
     </section>
@@ -38,8 +41,10 @@
         <div>
             <h1>Ons aanbod</h1>
             <p>
-                Met ons enthousiasme, verse visproducten en nostalgische viskar wordt jouw feest een succes! We hebben ervaring met kleine feestjes én grote evenementen… en alles wat daartussen zit.
+                Met ons enthousiasme, verse visproducten en nostalgische viskar wordt jouw feest een succes!
+                We hebben ervaring met kleine feestjes én grote evenementen… en alles wat daartussen zit.
                 Als het met vis te maken heeft, kunnen we het waarschijnlijk leveren. We hebben een breed assortiment. Onze kibbeling valt enorm goed in de smaak. We zijn daarnaast gespecialiseerd in het roken van zalm. Met onze mobiele oven roken we ook op locatie. Dat geeft niet alleen een heerlijke geur, vaak komen mensen gezellig bij onze rookoven staan.
+
                 Onze viskar op jouw feestje? Vul bij ‘contact’ op onze website het formulier in en we nemen contact met je op.
             </p>
         </div>
