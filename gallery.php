@@ -35,7 +35,7 @@
             <a href="index.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
         </div>
         <div>
-            <p>Copyright 2026 Jan de Visman</p>
+            <p>© 2022 Jan de Visman</p>
         </div>
         <div>
             <a href="https://www.facebook.com/jandevisman/"><img src="images/facebooklogo.png" alt="" class="mediaLogo"></a>
