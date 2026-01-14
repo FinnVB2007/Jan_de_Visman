@@ -1,9 +1,17 @@
 <?php
+
+$host = "127.0.0.1";
+$database = "jan_de_visman";
+$user = "root";
+$password = "";
+
+$db = mysqli_connect($host, $user, $password, $database);
+
 if (isset($_POST['submit'])) {
     session_start();
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = mysqli_escape_string($db, $_POST['name']);
+    $email = mysqli_escape_string($db, $_POST['email']);
+    $message = mysqli_escape_string($db, $_POST['message']);
     $_SESSION['name'] = $_POST['name'];
 
     $errors = [];
@@ -22,6 +30,10 @@ if (isset($_POST['submit'])) {
 
     if (empty($errors)) {
 
+        $query = "INSERT INTO forms(`name`, `email`, `message`) 
+        VALUES ('$name','$email','$message')";
+        $result = mysqli_query($db, $query);
+        mysqli_close($db);
         header('Location: confirmation.php');
         exit;
 
