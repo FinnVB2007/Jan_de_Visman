@@ -35,6 +35,7 @@
               Jan deed zijn kennis en ervaring met vis op tijdens zijn bijbaan bij Visgilde Leen de jong. Hij is daarnaast op het gebied van klussen een alleskunner. Onze mooie viskar is daar het resultaat van. Gert heeft vanuit zijn achtergrond veel kennis van communicatie en marketing. Zijn grote netwerk komt goed van pas.
                 <br>
                 <br>
+
                 Ons doel? Leuke dingen doen, mooie plaatsen bezoeken, toffe mensen ontmoeten en hen blij maken met onze verse vis!
             </p>
         </div>
