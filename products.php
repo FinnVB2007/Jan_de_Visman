@@ -51,13 +51,13 @@ mysqli_close($db);
 
 
 <main>
-    <?php foreach ($morefishes
-
-    as $index => $fish) { ?>
-    <tr>
-        <td><?= $fish['name'] ?></td>
-        <td><?= $fish['price_range'] ?></td>
-        <td><?= $fish['image'] ?></td>
+    <?php foreach ($morefishes as $i => $fish) { ?>
+    <article>
+        <h2><?= $fish['name'] ?></h2>
+        <p><?= $fish['price_range'] ?></p>
+        <p><?= $fish['image'] ?></p>
+        <a href="details.php?id=<?= $i ?>">Details</a>
+    </article
         <?php } ?>
 </main>
 
