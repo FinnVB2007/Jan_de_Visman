@@ -3,11 +3,11 @@ session_start();
 
 $name = $_SESSION['name'];
 
-/*
+
 if ($name == '') {
     header('location:index.php');
 }
-*/
+
 
 session_destroy();
 
