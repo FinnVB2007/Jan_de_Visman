@@ -44,7 +44,6 @@
             </p>
         </div>
         <div><img src="images/Viskar.png" alt="Een paardenkar omgebouwd met een raam hierin met een houten toonbank die er aan hangt"></div>
-
     </section>
 </main>
 <footer>
