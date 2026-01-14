@@ -33,6 +33,13 @@ body {
     font-style: normal;
 }
 
+.jost-<uniquifier> {
+           font-family: "Jost", sans-serif;
+           font-optical-sizing: auto;
+           font-weight: <weight>;
+           font-style: normal;
+       }
+
 body {
     background-color: #fffcf8;
 }

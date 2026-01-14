@@ -1,5 +1,6 @@
 P {
     font-size: 1.1rem;
+    font-family: "Jost", sans-serif;
 }
 
 h1 {
@@ -35,6 +36,12 @@ body {
     font-style: normal;
 }
 
+.jost-<uniquifier> {
+           font-family: "Jost", sans-serif;
+           font-optical-sizing: auto;
+           font-weight: <weight>;
+           font-style: normal;
+       }
 
 nav {
     display: flex;

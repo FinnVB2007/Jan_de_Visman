@@ -28,6 +28,7 @@ session_destroy();
     <link rel="stylesheet" href="css/confirmation.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
 <body>
