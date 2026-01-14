@@ -51,21 +51,14 @@ mysqli_close($db);
 
 
 <main>
-    database conectie hier voor die vissen
+    <?php foreach ($morefishes
 
-
-
-
-
-<!--    --><?php ////loop through all products
-//    foreach ( - as $i => - ) {
-//        ?>
-<!--    <article>-->
-<!--            <h2>--><?php //= $ ['name'] ?><!--</h2>-->
-<!--            <p>--><?php //= $ ['beschrijving'] ?><!--</p>-->
-<!--            <a><a href="products.php?id=--><?php //= $i ?><!--">product</a></a>-->
-<!--    </article>-->
-<!--    --><?php //} ?>
+    as $index => $fish) { ?>
+    <tr>
+        <td><?= $fish['name'] ?></td>
+        <td><?= $fish['price_range'] ?></td>
+        <td><?= $fish['image'] ?></td>
+        <?php } ?>
 </main>
 
 
