@@ -53,7 +53,19 @@ mysqli_close($db);
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <body>
-<h1>Edit "<?= htmlentities($form['name']) . ' - ' . htmlentities($form['email']) ?>"</h1>
+
+<nav>
+    <div class="logo">
+        <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+    </div>
+    <div class="links">
+        <a href="admin.php">Admin</a>
+        <a href="index.php">Home</a>
+        <a href="products.php">Producten</a>
+        <a href="gallery.php">Galerij</a>
+        <a href="contact.php">Contact</a>
+    </div>
+</nav>
 
 <form action="" method="post" enctype="multipart/form-data">
     <div class="data-field">
@@ -62,13 +74,13 @@ mysqli_close($db);
         <span class="errors"><?= isset($errors['name']) ? $errors['name'] : '' ?></span>
     </div>
     <div class="data-field">
-        <label for="director">director</label>
-        <input id="director" type="text" name="director" value="<?= htmlentities($form['director']) ?>"/>
+        <label for="email">email</label>
+        <input id="email" type="text" name="email" value="<?= htmlentities($form['email']) ?>"/>
         <span class="errors"><?= isset($errors['email']) ? $errors['email'] : '' ?></span>
     </div>
     <div class="data-field">
-        <label for="lenght">lenght</label>
-        <input id="lenght" type="text" name="lenght" value="<?= htmlentities($form['lenght']) ?>"/>
+        <label for="message">message</label>
+        <input id="message" type="text" name="message" value="<?= htmlentities($form['message']) ?>"/>
         <span class="errors"><?= isset($errors['message']) ? $errors['message'] : '' ?></span>
     </div>
     <div class="data-submit">
@@ -79,5 +91,21 @@ mysqli_close($db);
 <div>
     <a href="index.php">Go back to the list</a>
 </div>
+
+<footer>
+    <div class="footerLeft">
+        <div>
+            <a href="index.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+        </div>
+        <div>
+            <p>© 2022 Jan de Visman</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/jandevisman/"><img src="images/facebooklogo.png" alt="" class="mediaLogo"></a>
+            <a href="https://www.instagram.com/jande_visman/"><img src="images/instalogo.png" alt="" class="mediaLogo"></a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
