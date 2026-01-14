@@ -1,8 +1,10 @@
 <?php
 if (isset($_POST['submit'])) {
+    session_start();
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
+    $_SESSION['name'] = $_POST['name'];
 
     $errors = [];
 
@@ -19,8 +21,10 @@ if (isset($_POST['submit'])) {
     }
 
     if (empty($errors)) {
-        header('Location: index.php');
+
+        header('Location: confirmation.php');
         exit;
+
     }
 }
 ?>

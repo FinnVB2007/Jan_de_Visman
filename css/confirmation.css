@@ -1,0 +1,53 @@
+P {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.playball-regular {
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #fffcf8;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 29vh;
+    background-color: #e0d9cc;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 3vw;
+    border-radius: 5%;
+    border: solid grey 1.5px;
+
+}
