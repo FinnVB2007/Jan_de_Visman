@@ -66,7 +66,7 @@ mysqli_close($db);
     </section>
     <div>
         <a class="button" href="products.php">Terug naar productpagina</a>
-        <a class="button" href="reservation.php">Reserveren</a>
+        <a class="button" href="reservation.php?id=<?= $fishId?>">Reserveren</a>
     </div>
 </div>
 </main>

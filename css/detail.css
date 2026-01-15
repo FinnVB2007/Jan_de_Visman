@@ -175,3 +175,6 @@ main div {
     background-color: #fffcf8;
 }
 
+div a {
+    margin: 0.6vw;
+}
