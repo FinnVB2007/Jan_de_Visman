@@ -2,12 +2,11 @@
 /** @var mysqli $db */
 session_start();
 
-$fishName = $_SESSION['name'];
-$fishFull = $_SESSION['full_name'];
-$fishPrice = $_SESSION['price_range'];
-
 if (isset($_SESSION['name'])) {
     $emptyOrder = false;
+    $fishName = $_SESSION['name'];
+    $fishFull = $_SESSION['full_name'];
+    $fishPrice = $_SESSION['price_range'];
 }
 
 if (!isset($_SESSION['name'])) {
@@ -59,7 +58,7 @@ if (!isset($_SESSION['name']) || $_SESSION['name'] == '') {
 <main>
 <?php
 
-if ($emptyOrder == true)
+if ($emptyOrder == true ?? '')
 {
     echo 'jammer';
 }
