@@ -225,6 +225,11 @@ main section div img   {
     width: 5vw;
 }
 
+nav a:hover {
+    transform: scale(1.2);
+    transition: 6s;
+}
+
 span {
     display: flex;
     flex-direction: column;
