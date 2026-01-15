@@ -21,7 +21,7 @@
     <div class="links">
         <a href="index.php">Home</a>
         <a href="products.php">Producten</a>
-        <a href="reservation.php">Reserveren</a>
+        <a href="reservation.php">Vismandje</a>
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
     </div>
