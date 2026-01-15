@@ -23,7 +23,8 @@
         <a href="products.php">Producten</a>
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
-        <a href="fishbasket.php">Vismandje</a>
+
+        <a class="fishBasket" href="fishbasket.php"><img src="images/visMand.png" alt="Vismandje"></a>
     </div>
 </nav>
 <main>
