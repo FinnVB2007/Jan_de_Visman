@@ -10,7 +10,7 @@ if (isset($_SESSION['name'])) {
 }
 
 if (!isset($_SESSION['name'])) {
-    $emptyOrder = $_SESSION['empty'];
+    $fishEmpty = $_SESSION['empty'];
     header('location: index.php');
 
 }
