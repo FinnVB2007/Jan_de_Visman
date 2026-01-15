@@ -243,5 +243,7 @@ footer {
     transition: 1s;
 }
 
-
+.fishBasket img {
+    width: 5vw;
+}
 

@@ -207,5 +207,7 @@ main a:active {
     align-content: center;
 }
 
-
+.fishBasket img {
+    width: 5vw;
+}
 

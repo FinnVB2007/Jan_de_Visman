@@ -150,3 +150,7 @@ footer {
 .logo img{
     transition: .7s;
 }
+
+.fishBasket img {
+    width: 5vw;
+}
