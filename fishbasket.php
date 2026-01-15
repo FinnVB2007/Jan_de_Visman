@@ -7,6 +7,10 @@ if (isset($_SESSION['name'])) {
     $fishName = $_SESSION['name'];
     $fishFull = $_SESSION['full_name'];
     $fishPrice = $_SESSION['price_range'];
+
+
+
+
 }
 
 if (!isset($_SESSION['name'])) {
@@ -48,16 +52,26 @@ if (!isset($_SESSION['name'])) {
     </div>
 </nav>
 <header>
-    <h1>Reserveer hier</h1>
-    <p>Gebruik deze pagina om vis te reserveren.</p>
+    <h1>Reserveer overzicht</h1>
+    <p>Deze producten wilt u bij ons reserveren.</p>
 </header>
 <main>
+    <article>
+        <p><?php
+            echo $fishName ?? ''
+            ?></p>
+        <p><?php
+            echo $fishFull ?? '';
+            ?></p>
+        <p><?php
+            echo $fishPrice ?? '';
+            ?></p>
+    </article>
 
 
 
 </main>
 
-</main>
 <footer>
     <div class="footerLeft">
         <div>
