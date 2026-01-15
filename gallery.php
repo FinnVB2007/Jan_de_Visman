@@ -23,7 +23,7 @@
         <a href="products.php">Producten</a>
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
-        <a href="reservation.php">Vismandje</a>
+        <a href="fishbasket.php">Vismandje</a>
     </div>
 </nav>
 <header></header>

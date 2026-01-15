@@ -46,7 +46,7 @@ mysqli_close($db);
             <a href="products.php">Producten</a>
             <a href="gallery.php">Galerij</a>
             <a href="contact.php">Contact</a>
-            <a href="reservation.php">Vismandje</a>
+            <a href="fishbasket.php">Vismandje</a>
         </div>
     </nav>
 
@@ -66,7 +66,7 @@ mysqli_close($db);
     </section>
     <div>
         <a class="button" href="products.php">Terug naar productpagina</a>
-        <a class="button" href="reservation.php?id=<?= $fishId?>">Reserveren</a>
+        <a class="button" href="fishbasket.php?id=<?= $fishId?>">Reserveren</a>
     </div>
 </div>
 </main>
