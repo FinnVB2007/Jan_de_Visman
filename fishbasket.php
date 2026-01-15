@@ -10,7 +10,6 @@ if (isset($_SESSION['name'])) {
 }
 
 if (!isset($_SESSION['name'])) {
-    $emptyOrder = true;
     $emptyOrder = $_SESSION['empty'];
     header('location: index.php');
 

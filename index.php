@@ -32,6 +32,9 @@ session_start();
             <a href="fishbasket.php"><img src="images/visMand.png" alt="Vismandje"></a>
         </section>
     </div>
+    <?php if (isset($_SESSION['empty'])) { ?>
+        <span class="help is-danger"><?= 'Jammer'?> </span>
+    <?php } ?>
 </nav>
 <main>
 
