@@ -50,7 +50,7 @@ mysqli_close($db);
     <h1>Bekijk ons assortiment!</h1>
 </header>
 
-
+<section class="product">
 <main>
     <?php foreach ($morefishes as $i => $fish) { ?>
     <article>
@@ -61,7 +61,7 @@ mysqli_close($db);
     </article
         <?php } ?>
 </main>
-
+</section>
 
 <footer>
     <div class="footerLeft">

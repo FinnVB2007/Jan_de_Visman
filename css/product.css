@@ -167,13 +167,17 @@ header {
 }
 
 main {
-    padding-left: 3vw;
+
     display: flex;
     flex-direction: column;
     gap: 7px;
     padding-bottom: 3vh;
     padding-top: 4vh;
 
+}
+
+section {
+    padding-left: 3vw;
 }
 
 main a {
