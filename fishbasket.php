@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_SESSION['name'])) {
-    $emptyOrder = false;
+
     $fishName = $_SESSION['name'];
     $fishFull = $_SESSION['full_name'];
     $fishPrice = $_SESSION['price_range'];
@@ -15,10 +15,6 @@ if (!isset($_SESSION['name'])) {
 
 }
 
-if (!isset($_SESSION['name']) || $_SESSION['name'] == '') {
-  $emptyOrder = true;
-    exit;
-}
 ?>
 
 
