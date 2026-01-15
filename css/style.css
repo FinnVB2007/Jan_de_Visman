@@ -28,6 +28,7 @@ h5 {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffcf8;
 }
 
 .playball-regular {
@@ -231,6 +232,7 @@ nav a:hover {
 }
 
 span {
+
     display: flex;
     flex-direction: column;
     color: white;
