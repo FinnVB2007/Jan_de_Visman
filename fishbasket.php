@@ -11,9 +11,9 @@ if (isset($_SESSION['name'])) {
 
 if (!isset($_SESSION['name'])) {
     $emptyOrder = true;
+    $emptyOrder = $_SESSION['empty'];
+    header('location: index.php');
 
-
-    require_once "includes/connection.php";
 }
 
 if (!isset($_SESSION['name']) || $_SESSION['name'] == '') {
@@ -58,13 +58,9 @@ if (!isset($_SESSION['name']) || $_SESSION['name'] == '') {
     <p>Gebruik deze pagina om vis te reserveren.</p>
 </header>
 <main>
-<?php
 
-if ($emptyOrder == true ?? '')
-{
-    echo 'jammer';
-}
-?>
+
+
 </main>
 
 </main>
