@@ -43,7 +43,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0vh 10vw;
+    padding: 0vh 7vw;
     background-color: #e0d9cc;
     align-items: center;
 }
@@ -64,23 +64,19 @@ a {
 }
 
 .links {
-    padding: 5vh;
+    padding: 2vh;
     gap: 20px;
     text-align: center;
 
 }
 
 .links a {
-    width: 4vw;
     height: 100%;
     align-self: center;
 }
 
 
 nav div a {
-    background-color: #fcd0bd;
-
-    border: 2px solid #fcd0bd;
     color: black;
     padding: 4% 22px;
 }
