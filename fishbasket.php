@@ -24,7 +24,6 @@ if (isset($_SESSION['name'])) {
     $result = mysqli_query($db, $query);
 
     if (mysqli_num_rows($result) != 1) {
-        header('Location: index.php');
         exit;
     }
 }
@@ -68,7 +67,13 @@ mysqli_close($db);
     <p>Gebruik deze pagina om vis te reserveren.</p>
 </header>
 <main>
+<?php
 
+if ($emptyOrder == true)
+{
+    echo 'jammer';
+}
+?>
 </main>
 
 </main>
