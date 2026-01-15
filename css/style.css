@@ -224,3 +224,8 @@ main section div img   {
 .fishBasket img {
     width: 5vw;
 }
+
+nav a:hover {
+    transform: scale(1.2);
+    transition: 6s;
+}
