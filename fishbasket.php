@@ -1,3 +1,41 @@
+<?php
+/** @var mysqli $db */
+session_start();
+
+$fishName = $_SESSION['name'];
+$fishFull = $_SESSION['full_name'];
+$fishPrice = $_SESSION['price_range'];
+
+if (!isset($_SESSION['name']) || $_SESSION['name'] == '') {
+  $emptyOrder = true;
+    exit;
+}
+
+
+if (isset($_SESSION['name'])) {
+    $emptyOrder = false;
+
+
+    require_once "includes/connection.php";
+
+    $fishId = mysqli_escape_string($db, $_GET['id']);
+
+    $query = "SELECT * FROM fishes WHERE id = '$fishId'";
+    $result = mysqli_query($db, $query);
+
+    if (mysqli_num_rows($result) != 1) {
+        header('Location: index.php');
+        exit;
+    }
+}
+
+$fish = mysqli_fetch_assoc($result);
+
+mysqli_close($db);
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -31,7 +69,7 @@
 </header>
 <main>
 
-    
+</main>
 
 </main>
 <footer>

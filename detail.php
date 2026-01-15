@@ -1,4 +1,5 @@
 <?php
+session_start();
 /** @var mysqli $db */
 
 
@@ -20,7 +21,9 @@ if (mysqli_num_rows($result) != 1) {
 }
 
 $fish = mysqli_fetch_assoc($result);
-
+$_SESSION['name'] = $fish['name'];
+$_SESSION['full_name'] = $fish['full_name'];
+$_SESSION['price_range'] = $fish['price_range'];
 mysqli_close($db);
 ?>
 <!doctype html>
