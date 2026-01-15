@@ -3,23 +3,18 @@
 session_start();
 
 if (isset($_SESSION['name'])) {
-    $emptyOrder = false;
+
     $fishName = $_SESSION['name'];
     $fishFull = $_SESSION['full_name'];
     $fishPrice = $_SESSION['price_range'];
 }
 
 if (!isset($_SESSION['name'])) {
-    $emptyOrder = true;
-    $emptyOrder = $_SESSION['empty'];
+    $fishEmpty = $_SESSION['empty'];
     header('location: index.php');
 
 }
 
-if (!isset($_SESSION['name']) || $_SESSION['name'] == '') {
-  $emptyOrder = true;
-    exit;
-}
 ?>
 
 
