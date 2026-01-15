@@ -1,7 +1,8 @@
 <?php
 /** @var mysqli $db */
 require_once "includes/connection.php";
-
+session_start();
+session_destroy();
 
 if (isset($_POST['submit'])) {
     $formId = mysqli_escape_string($db, $_POST['id']);
