@@ -88,7 +88,8 @@ nav div a {
     padding: 4% 22px;
 }
 
-nav img {
+
+.logo img {
     width: 15vw;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -222,4 +223,8 @@ main section div img   {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.fishBasket img {
+    width: 5vw;
 }
