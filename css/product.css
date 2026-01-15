@@ -49,6 +49,10 @@ nav {
     align-items: center;
 }
 
+header h1 {
+    font-size: 3rem;
+    padding-top: 18vh;
+}
 
 nav div {
     display: flex;
@@ -148,9 +152,9 @@ header {
     text-align: center;
     gap: 20px;
     align-items: center;
-    padding: 225px 75px;
+    padding: 150px 70px;
     border-radius: 5px;
-    background-image: url(../images/vis-kar.png);
+    background-image: url(../images/fishheader.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,7 +182,7 @@ main {
 }
 
 section {
-    padding-left: 12vw;
+    padding-left: 15vw;
 }
 
 main a {
