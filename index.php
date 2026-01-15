@@ -21,9 +21,9 @@
         <a href="admin.php">Admin</a>
         <a href="index.php">Home</a>
         <a href="products.php">Producten</a>
-        <a href="reservation.php">Vismandje</a>
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
+        <a href="reservation.php">Vismandje</a>
     </div>
 </nav>
 <main>
