@@ -173,11 +173,12 @@ main {
     gap: 7px;
     padding-bottom: 3vh;
     padding-top: 4vh;
+    background-color: #fffcf8;
 
 }
 
 section {
-    padding-left: 3vw;
+    padding-left: 12vw;
 }
 
 main a {

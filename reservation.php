@@ -27,6 +27,7 @@
 </nav>
 <header>
     <h1>Reserveer hier</h1>
+    <p>Gebruik deze pagina om vis te reserveren.</p>
 </header>
 <main>
 
