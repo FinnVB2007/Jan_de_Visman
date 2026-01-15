@@ -35,7 +35,7 @@ mysqli_close($db);
         @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
 
     <nav>
         <div class="logo">
@@ -53,6 +53,7 @@ mysqli_close($db);
     <title>Details - <?= $fish['name'] ?></title>
 </head>
 <body>
+<main>
 <div class="container px-4">
     <h1 class="title mt-4"><?= $fish['name'] ?></h1>
     <section class="content">
@@ -66,7 +67,7 @@ mysqli_close($db);
         <a class="button" href="products.php">Terug naar productpagina</a>
     </div>
 </div>
-
+</main>
 <footer>
     <div class="footerLeft">
         <div>

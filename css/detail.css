@@ -34,10 +34,26 @@ body {
     font-style: normal;
 }
 
-.jost- {
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+main a {
+    background-color: #fcd0bd;
+    border: 2px solid #fcd0bd;
+    color: black;
+    width: 3.5vw;
+    height: 4vh;
+    border-radius: 15%;
+}
+
+main a:hover {
+    background-color: #f68f51;
+    border: 2px solid #f68f51;
+    transition: .2s;
+}
+
+main a:active {
+    background-color: #bde7fa;
+    border: 2px solid #bde7fa;
+    transition: .2s;
+    align-content: center;
 }
 
 nav {
@@ -96,6 +112,16 @@ nav img {
     border: 2px solid rgba(255, 255, 255, 0);
 }
 
+.logo img{
+    transition: .7s;
+}
+
+
+.logo img:hover {
+    transform: scale(1.06);
+    transition: 1s;
+}
+
 
 .links a:hover {
     background-color: #f68f51;
@@ -142,61 +168,8 @@ footer {
     margin: 0vw;
 }
 
-header {
-    font-family: "Playball", cursive;
-    color: #f68f51;
-    text-align: center;
-    gap: 20px;
-    align-items: center;
-    padding: 225px 75px;
-    border-radius: 5px;
-    background-image: url(../images/vis-kar.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.logo img:hover {
-    transform: scale(1.06);
-    transition: 1s;
-}
-
-
-.logo img{
-    transition: .7s;
-}
-
-main {
+main div {
+    padding-top: 1.5vw;
     padding-left: 3vw;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    padding-bottom: 3vh;
-    padding-top: 4vh;
-
+    padding-bottom: 1.5vw;
 }
-
-main a {
-    background-color: #fcd0bd;
-    border: 2px solid #fcd0bd;
-    color: black;
-    width: 3.5vw;
-    height: 4vh;
-    border-radius: 15%;
-}
-
-main a:hover {
-    background-color: #f68f51;
-    border: 2px solid #f68f51;
-    transition: .2s;
-}
-
-main a:active {
-    background-color: #bde7fa;
-    border: 2px solid #bde7fa;
-    transition: .2s;
-    align-content: center;
-}
-
-
-
