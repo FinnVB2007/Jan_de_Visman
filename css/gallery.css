@@ -78,7 +78,7 @@ a {
 
 nav div a {
     color: black;
-    padding: 4% 22px;
+    padding: 2% 11px;
 }
 
 nav img {
@@ -149,4 +149,9 @@ footer {
 
 .fishBasket img {
     width: 5vw;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    transition: 6s;
 }

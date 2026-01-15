@@ -26,6 +26,7 @@ h5 {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffcf8;
 }
 
 .playball-regular {
@@ -83,7 +84,7 @@ a {
 
 nav div a {
     color: black;
-    padding: 4% 22px;
+    padding: 2% 11px;
 }
 
 nav img {
@@ -167,7 +168,6 @@ header {
 }
 
 main {
-
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -177,7 +177,7 @@ main {
 
 }
 
-section {
+.product {
     padding-left: 15vw;
 }
 
@@ -207,3 +207,7 @@ main a:active {
     width: 5vw;
 }
 
+nav a:hover {
+    transform: scale(1.2);
+    transition: 6s;
+}
