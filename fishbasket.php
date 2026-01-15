@@ -6,32 +6,21 @@ $fishName = $_SESSION['name'];
 $fishFull = $_SESSION['full_name'];
 $fishPrice = $_SESSION['price_range'];
 
+if (isset($_SESSION['name'])) {
+    $emptyOrder = false;
+}
+
+if (!isset($_SESSION['name'])) {
+    $emptyOrder = true;
+
+
+    require_once "includes/connection.php";
+}
+
 if (!isset($_SESSION['name']) || $_SESSION['name'] == '') {
   $emptyOrder = true;
     exit;
 }
-
-
-if (isset($_SESSION['name'])) {
-    $emptyOrder = false;
-
-
-    require_once "includes/connection.php";
-
-    $fishId = mysqli_escape_string($db, $_GET['id']);
-
-    $query = "SELECT * FROM fishes WHERE id = '$fishId'";
-    $result = mysqli_query($db, $query);
-
-    if (mysqli_num_rows($result) != 1) {
-        header('Location: index.php');
-        exit;
-    }
-}
-
-$fish = mysqli_fetch_assoc($result);
-
-mysqli_close($db);
 ?>
 
 
@@ -68,7 +57,13 @@ mysqli_close($db);
     <p>Gebruik deze pagina om vis te reserveren.</p>
 </header>
 <main>
+<?php
 
+if ($emptyOrder == true)
+{
+    echo 'jammer';
+}
+?>
 </main>
 
 </main>
