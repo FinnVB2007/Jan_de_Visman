@@ -224,3 +224,14 @@ main section div img   {
 .fishBasket img {
     width: 5vw;
 }
+
+span {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #f44141;
+    justify-content: center;
+    text-align: center;
+    padding: 3vh;
+    font-size: 1.8rem;
+}
