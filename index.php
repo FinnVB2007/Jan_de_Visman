@@ -38,6 +38,7 @@ session_start();
 <?php if (isset($_SESSION['empty'])) { ?>
     <span class="help is-danger"><?= 'Er zitten nog geen producten in uw mandje.'?> </span>
 <?php } ?>
+
 <?php
 
     unset($_SESSION['empty']); ?>

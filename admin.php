@@ -90,17 +90,17 @@ mysqli_close($db);
     <div class="data-field">
         <label for="name">name</label>
         <input id="name" type="text" name="name" value="<?= htmlentities($form['name']) ?>"/>
-        <span class="errors"><?= isset($errors['name']) ? $errors['name'] : '' ?></span>
+
     </div>
     <div class="data-field">
         <label for="email">email</label>
         <input id="email" type="text" name="email" value="<?= htmlentities($form['email']) ?>"/>
-        <span class="errors"><?= isset($errors['email']) ? $errors['email'] : '' ?></span>
+
     </div>
     <div class="data-field">
         <label for="message">message</label>
         <input id="message" type="text" name="message" value="<?= htmlentities($form['message']) ?>"/>
-        <span class="errors"><?= isset($errors['message']) ? $errors['message'] : '' ?></span>
+
     </div>
 </form>
 <div>
