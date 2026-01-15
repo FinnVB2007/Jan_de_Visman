@@ -10,11 +10,10 @@ if (isset($_SESSION['name'])) {
 }
 
 if (!isset($_SESSION['name'])) {
-    $fishEmpty = $_SESSION['empty'];
-    header('location: index.php');
-
+    $_SESSION['empty'] = true;
+    header('Location: index.php');
+    exit;
 }
-
 ?>
 
 
