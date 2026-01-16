@@ -28,8 +28,10 @@
         </section>
     </div>
 </nav>
-<header></header>
+<header> <h1>Onze visavonturen</h1></header>
 <main>
+
+
     <article class="gallery">
 
         <!-- Evenementen -->
