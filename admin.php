@@ -89,17 +89,17 @@ mysqli_close($db);
 <form action="" method="post" enctype="multipart/form-data">
     <div class="data-field">
         <label for="name">name</label>
-        <input id="name" type="text" name="name" value="<?= htmlentities($form['name']) ?>"/>
+        <input id="name" type="text" name="name" value="<?= htmlentities($form['name'] ?? '') ?>"/>
 
     </div>
     <div class="data-field">
         <label for="email">email</label>
-        <input id="email" type="text" name="email" value="<?= htmlentities($form['email']) ?>"/>
+        <input id="email" type="text" name="email" value="<?= htmlentities($form['email'] ?? '') ?>"/>
 
     </div>
     <div class="data-field">
         <label for="message">message</label>
-        <input id="message" type="text" name="message" value="<?= htmlentities($form['message']) ?>"/>
+        <input id="message" type="text" name="message" value="<?= htmlentities($form['message'] ?? '') ?>"/>
 
     </div>
 </form>
