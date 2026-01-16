@@ -226,10 +226,6 @@ main section div img   {
     width: 5vw;
 }
 
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
-}
 
 span {
 
@@ -242,4 +238,9 @@ span {
     padding: 3vh;
     font-size: 1.8rem;
     font-family: "Jost", sans-serif;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    transition: 6s;
 }

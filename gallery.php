@@ -30,7 +30,51 @@
 </nav>
 <header></header>
 <main>
+    <article class="gallery">
 
+        <!-- Evenementen -->
+        <div class="event" data-event="juni-2025">
+            <img src="images/gallery/juni2025.jpeg" alt="">
+            <img src="images/gallery/juni20252.jpeg" alt="">
+            <img src="images/gallery/juni20253.jpeg" alt="">
+            <img src="images/gallery/juni20254.jpeg" alt="">
+            <h2>Historische Markt Sommelsdijk - juni 2025</h2>
+        </div>
+        <div class="event" data-event="mei-2025">
+            <img src="images/gallery/Mei2025.jpeg" alt="">
+            <img src="images/gallery/Mei20252.jpeg" alt="">
+            <h2>Bevrijdingsfestival Ooltgensplaat- Mei 2025</h2>
+        </div>
+        <div class="event" data-event="maart-2025">
+            <img src="images/gallery/Maart2025.jpeg" alt="">
+            <img src="images/gallery/Maart20252.jpeg" alt="">
+            <img src="images/gallery/Maart20253.jpeg" alt="">
+            <img src="images/gallery/Maart20254.jpeg" alt="">
+            <h2>Ouddorps Bierfestival - Maart 2025</h2>
+        </div>
+        <div class="event" data-event="Oudjaarsdag -2024">
+            <img src="images/gallery/Oudjaarsdag2024.jpeg" alt="">
+            <img src="images/gallery/Oudjaarsdag20242.jpeg" alt="">
+            <img src="images/gallery/Oudjaarsdag20243.jpeg" alt="">
+            <img src="images/gallery/Oudjaarsdag20244.jpg" alt="">
+            <h2>Vis roken bij Van Harberden - Oudjaarsdag 2024</h2>
+        </div>
+        <div class="event" data-event="HolleBolle-2024">
+            <img src="images/gallery/HolleBolleDagen-Augustus2024.jpeg" alt="">
+            <img src="images/gallery/HolleBolleDagen-Augustus20242.jpeg" alt="">
+            <img src="images/gallery/HolleBolleDagen-Augustus20243.jpeg" alt="">
+            <img src="images/gallery/HolleBolleDagen-Augustus20244.jpeg" alt="">
+            <h2>Holle Bolle Dag - Augustus 2024</h2>
+        </div>
+        <div class="event" data-event="strand-2024">
+            <img src="images/gallery/WhiskyaanhetStrand-Januari20242.jpeg" alt="">
+            <img src="images/gallery/WhiskyaanhetStrand-Januari20243.jpeg" alt="">
+            <img src="images/gallery/WhiskyaanhetStrand-Januari20244.jpeg" alt="">
+            <img src="images/gallery/WhiskyaanhetStrand-Januari20245.jpeg" alt="">
+            <h2>Whisky aan het Strand - Januari 2024</h2>
+        </div>
+
+    </article>
 </main>
 <footer>
     <div class="footerLeft">
@@ -46,8 +90,63 @@
         </div>
     </div>
 </footer>
-</body>
-</html>
+
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="controls">
+        <button id="prev">&larr;</button>
+        <button id="next">&#8594</button>
+    </div>
+</div>
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-img');
+    const closeBtn = document.querySelector('.close');
+    const nextBtn = document.getElementById('next');
+    const prevBtn = document.getElementById('prev');
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    // Klik op afbeelding
+    document.querySelectorAll('.event img').forEach(img => {
+        img.addEventListener('click', () => {
+            const eventDiv = img.closest('.event');
+            currentImages = Array.from(eventDiv.querySelectorAll('img'));
+            currentIndex = currentImages.indexOf(img);
+
+            openLightbox();
+        });
+    });
+
+    function openLightbox() {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = currentImages[currentIndex].src;
+    }
+
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    // Navigatie
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        lightboxImg.src = currentImages[currentIndex].src;
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        lightboxImg.src = currentImages[currentIndex].src;
+    });
+
+    // Sluiten bij klik buiten afbeelding
+    lightbox.addEventListener('click', e => {
+        if (e.target === lightbox) closeLightbox();
+    });
+</script>
 
 </body>
 </html>
