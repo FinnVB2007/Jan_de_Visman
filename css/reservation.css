@@ -240,10 +240,18 @@ main article {
 }
 
 button {
+
     background-color: #fcd0bd;
     border: 2px solid #fcd0bd;
     color: black;
-    width: 6vw;
-    height: 4vh;
+    padding: 2vh;
+    gap: 20px;
     border-radius: 10%;
 }
+
+button:hover {
+    background-color: #f68f51;
+    border: 2px solid #f68f51;
+    transition: .2s;
+}
+
