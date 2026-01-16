@@ -58,9 +58,6 @@ if (!isset($_SESSION['name'])) {
 <main>
     <article>
         <p><?php
-            echo $fishName ?? ''
-            ?></p>
-        <p><?php
             echo $fishFull ?? '';
             ?></p>
         <p><?php
