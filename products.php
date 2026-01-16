@@ -51,6 +51,7 @@ mysqli_close($db);
 
 <header>
     <h1>Bekijk ons assortiment!</h1>
+    <p>Onze verse visproducten zijn van hoge kwaliteit en slagen er zeker in jou te laten genieten!</p>
 </header>
 
 <section class="product">
