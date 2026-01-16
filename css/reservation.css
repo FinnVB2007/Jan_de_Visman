@@ -236,6 +236,7 @@ main article {
     padding-left: 25vw;
     display: flex;
     flex-direction: column;
+    padding-bottom: 3vh;
 }
 
 button {
