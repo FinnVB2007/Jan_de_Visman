@@ -240,7 +240,7 @@ main article {
 }
 
 button {
-
+    font-family: "Playball", cursive;
     background-color: #fcd0bd;
     border: 2px solid #fcd0bd;
     color: black;
