@@ -1,23 +1,15 @@
 <?php
 /** @var mysqli $db */
+session_set_cookie_params(0); // cookie vervalt bij browser sluiten
 session_start();
 
-if (isset($_SESSION['name'])) {
-
-    $fishName = $_SESSION['name'];
-    $fishFull = $_SESSION['full_name'];
-    $fishPrice = $_SESSION['price_range'];
-
-
-
-
-}
-
-if (!isset($_SESSION['name'])) {
+if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
     $_SESSION['empty'] = true;
     header('Location: index.php');
     exit;
 }
+
+$cart = $_SESSION['cart'];
 ?>
 
 
@@ -53,17 +45,15 @@ if (!isset($_SESSION['name'])) {
 </nav>
 <header>
     <h1>Reserveer overzicht</h1>
-    <p>Deze producten wilt u bij ons reserveren.</p>
+    <h2>Deze producten wilt u bij ons reserveren.</h2>
 </header>
 <main>
-    <article>
-        <p><?php
-            echo $fishFull ?? '';
-            ?></p>
-        <p><?php
-            echo $fishPrice ?? '';
-            ?></p>
-    </article>
+    <?php foreach ($cart as $item): ?>
+        <article>
+            <p><?= htmlspecialchars($item['full'] ?? ''); ?></p>
+            <p><?= htmlspecialchars($item['price'] ?? ''); ?></p>
+        </article>
+    <?php endforeach; ?>
 
 
 

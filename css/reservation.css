@@ -1,5 +1,5 @@
 P {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-family: "Jost", sans-serif;
 }
 
@@ -201,29 +201,6 @@ main section div img   {
     width: 40vw;
     border: 3px solid #e0d9cc;
 }
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 
 
 header {

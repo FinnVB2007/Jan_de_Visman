@@ -1,4 +1,5 @@
 <?php
+session_set_cookie_params(0);
 session_start();
 /** @var mysqli $db */
 
@@ -21,9 +22,17 @@ if (mysqli_num_rows($result) != 1) {
 }
 
 $fish = mysqli_fetch_assoc($result);
-$_SESSION['name'] = $fish['name'];
-$_SESSION['full_name'] = $fish['full_name'];
-$_SESSION['price_range'] = $fish['price_range'];
+// Maak cart aan als hij nog niet bestaat
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = [];
+}
+
+// Voeg product toe aan cart
+$_SESSION['cart'][] = [
+        'name'  => $fish['name'],
+        'full'  => $fish['full_name'],
+        'price' => $fish['price_range']
+];
 mysqli_close($db);
 ?>
 <!doctype html>
