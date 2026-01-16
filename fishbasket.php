@@ -48,10 +48,14 @@ $cart = $_SESSION['cart'];
     <h2>Deze producten wilt u bij ons reserveren.</h2>
 </header>
 <main>
-    <?php foreach ($cart as $item): ?>
+    <?php foreach ($cart as $index => $item): ?>
         <article>
             <p><?= htmlspecialchars($item['full'] ?? ''); ?></p>
             <p><?= htmlspecialchars($item['price'] ?? ''); ?></p>
+            <form method="post" action="removeProduct.php">
+                <input type="hidden" name="index" value="<?= $index; ?>">
+                <button type="submit">Verwijderen</button>
+            </form>
         </article>
     <?php endforeach; ?>
 
