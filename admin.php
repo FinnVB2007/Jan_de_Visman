@@ -48,7 +48,7 @@ WHERE id = '$formId'";
 } else if (isset($_GET['id'])) {
     $formId = $_GET['id'];
 
-    $query = "SELECT * FROM forms WHERE id = " . mysqli_escape_string($db, $formId);
+    $query = "SELECT id, name, email, message FROM forms WHERE id = $formId";
     $result = mysqli_query($db, $query);
     if (mysqli_num_rows($result) == 1) {
         $form = mysqli_fetch_assoc($result);
