@@ -235,10 +235,11 @@ span {
 
     display: flex;
     flex-direction: column;
-    color: white;
-    background-color: #f44141;
+    color: black;
+    background-color: #bde7fa;
     justify-content: center;
     text-align: center;
     padding: 3vh;
     font-size: 1.8rem;
+    font-family: "Jost", sans-serif;
 }
