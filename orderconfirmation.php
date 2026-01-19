@@ -7,8 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Orderbevestiging</title>
     <link rel="stylesheet" href="css/orderconfirmation.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
+<nav>
+    <div class="logo">
+        <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+    </div>
+    <div class="links">
+    </div>
+</nav>
 
-</body>
 </html>

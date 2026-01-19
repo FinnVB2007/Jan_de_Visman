@@ -1,0 +1,158 @@
+P {
+    font-size: 1.1rem;
+    font-family: "Jost", sans-serif;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-family: "Playball", cursive;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.playball-regular {
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jost- {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #fffcf8;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 16vh;
+    background-color: #e0d9cc;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 3vw;
+    border-radius: 5%;
+    border: solid grey 1.5px;
+
+}
+
+.logo img{
+    transition: .7s;
+}
+
+.logo img:hover {
+    transform: scale(1.06);
+    transition: 1s;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    transition: 6s;
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5vw;
+    width: 20vw;
+    height: 3vw;
+    background-color: #fcd0bd;
+    border: 2.5px #fcd0bd;
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: #f68f51;
+    transition: .2s;
+}
+
+header a:active {
+    background-color: #bde7fa;
+    transition: .2s;
+}
+
+header h1 {
+    color: #f68f51;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0vh 7vw;
+    background-color: #e0d9cc;
+    align-items: center;
+}
+
+
+nav div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    font-family: "Playball", cursive;
+    font-size: 1.3rem;
+}
+
+.links {
+    padding: 2vh;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.links a {
+    height: 100%;
+    align-self: center;
+}
+
+
+nav div a {
+    color: black;
+    padding: 2% 11px;
+}
+
+nav img {
+    width: 15vw;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.logo a {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+

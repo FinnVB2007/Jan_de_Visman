@@ -57,7 +57,9 @@ $cart = $_SESSION['cart'];
             <form method="post" action="removeProduct.php">
                 <input type="hidden" name="index" value="<?= $index; ?>">
                 <button type="submit">Verwijderen</button>
-                <button type="button">Reserveren</button>
+            </form>
+            <form action="orderconfirmation.php">
+                <button type="submit">Reserveer!</button>
             </form>
         </article>
     <?php endforeach; ?>
