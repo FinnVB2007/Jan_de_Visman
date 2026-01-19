@@ -247,6 +247,7 @@ button {
     padding: 2vh;
     gap: 20px;
     border-radius: 10%;
+    font-size: 1rem;
 }
 
 button:hover {
