@@ -68,8 +68,10 @@ if (isset($_POST['submit'])) {
     </div>
 </nav>
 <header>
+    <div>
     <h1>Kom in contact!</h1>
     <p>Vul het onderstaande formulier in met uw gegevens om in contact te komen met ons.</p>
+    </div>
 </header>
 <main>
     <form action="" method="post">

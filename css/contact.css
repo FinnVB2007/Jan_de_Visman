@@ -19,7 +19,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("../images/contact icons.webp");
+    background-image: url("../images/bannercontact.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,6 +36,19 @@ header p {
     font-size: 1.5rem;
     color: #f68f51;
 }
+
+header {
+    align-items: center;
+
+}
+
+header div {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+
+
 
 .jost- {
     font-family: "Jost", sans-serif;
