@@ -251,3 +251,24 @@ nav a:hover {
     transform: scale(1.2);
     transition: 6s;
 }
+
+
+.fishBasket a:hover {
+    background-color: rgba(246, 143, 81, 0);
+    border: rgba(246, 143, 81, 0);
+    transition: .2s;
+    padding-top: 60%;
+    transform: scale(1);
+}
+
+
+.fishBasket img:hover {
+    background-color: #f68f51;
+
+    transition: .2s;
+    transform: scale(1);
+}
+
+.fishBasket a {
+    padding-top: 60%;
+}

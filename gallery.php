@@ -24,7 +24,7 @@
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
         <section class="fishBasket">
-            <a href="fishbasket.php"><img src="images/visMand.png" alt="Vismandje"></a>
+            <a href="fishbasket.php"><img src="images/Fishnet.png" alt="Vismandje"></a>
         </section>
     </div>
 </nav>
