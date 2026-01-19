@@ -265,7 +265,8 @@ nav a:hover {
 }
 
 .formConfirm {
-    padding-left: 25vw;
+    display: flex;
+    justify-content: center;
 }
 
 .fishBasket a:hover {
