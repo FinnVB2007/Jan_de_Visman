@@ -47,9 +47,34 @@ $cart = $_SESSION['cart'];
 </nav>
 <header>
     <h1>Reserveer overzicht</h1>
-    <h2>Deze producten wilt u bij ons reserveren.</h2>
+
+    <h2>Vul uw contactgegevens in</h2>
 </header>
 <main>
+    <form class="formBasket" action="" method="post">
+        <label for="name">Naam *</label>
+        <input type="text" id="name" name="name" placeholder="Naam" value="<?= htmlentities($name ?? '')?>">
+        <?php if (isset($errors['name'])) { ?>
+            <span class="help is-danger"><?= htmlentities($errors['name']) ?></span>
+        <?php } ?>
+
+        <label for="email">E-mailadres *</label>
+        <input type="text" id="email" name="email" placeholder="E-mailadres"
+               value="<?= htmlentities($email ?? '')?>">
+        <?php if (isset($errors['email'])) { ?>
+            <span class="help is-danger"><?= htmlentities(($errors['email'])) ?></span>
+        <?php } ?>
+
+        <label for="number">Telefoonnummer *</label>
+        <input type="number" id="number" name="number" placeholder="Telefoonnummer"
+               value="<?= htmlentities($number ?? '')?>">
+        <?php if (isset($errors['number'])) { ?>
+            <span class="help is-danger"><?= htmlentities(($errors['number'])) ?></span>
+        <?php } ?>
+    </form>
+
+    <h2 class="mainTitle">Deze producten zitten in uw winkelwagen</h2>
+
     <?php foreach ($cart as $index => $item): ?>
         <article>
             <p><?= htmlspecialchars($item['full'] ?? ''); ?></p>

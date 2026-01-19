@@ -267,6 +267,7 @@ nav a:hover {
 .formConfirm {
     display: flex;
     justify-content: center;
+
 }
 
 .fishBasket a:hover {
@@ -288,3 +289,27 @@ nav a:hover {
 .fishBasket a {
     padding-top: 60%;
 }
+
+.formBasket {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 79.7%;
+    max-width: 50vw;
+    padding-left: 24vw;
+    padding-right: 24vw;
+    font-family: "Tw Cen MT";
+    background-color: #fffcf8;
+}
+
+input {
+    padding: 1vw;
+}
+
+.mainTitle {
+    font-family: "Playball", cursive;
+    color: #f68f51;
+    display: flex;
+    justify-content: center;
+}
+
