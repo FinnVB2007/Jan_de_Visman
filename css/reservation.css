@@ -313,3 +313,9 @@ input {
     justify-content: center;
 }
 
+form {
+display: flex;
+    gap: 8px;
+
+}
+
