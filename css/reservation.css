@@ -258,4 +258,6 @@ button:hover {
     transition: .2s;
 }
 
-
+.formConfirm {
+    padding-left: 25vw;
+}

@@ -58,11 +58,11 @@ $cart = $_SESSION['cart'];
                 <input type="hidden" name="index" value="<?= $index; ?>">
                 <button type="submit">Verwijderen</button>
             </form>
-            <form action="orderconfirmation.php">
-                <button type="submit">Reserveer!</button>
-            </form>
         </article>
     <?php endforeach; ?>
+    <form class="formConfirm" action="orderconfirmation.php">
+        <button type="submit">Reserveer!</button>
+    </form>
 
 
 
