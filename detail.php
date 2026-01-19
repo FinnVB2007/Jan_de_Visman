@@ -22,17 +22,7 @@ if (mysqli_num_rows($result) != 1) {
 }
 
 $fish = mysqli_fetch_assoc($result);
-// Maak cart aan als hij nog niet bestaat
-if (!isset($_SESSION['cart'])) {
-    $_SESSION['cart'] = [];
-}
 
-// Voeg product toe aan cart
-$_SESSION['cart'][] = [
-        'name'  => $fish['name'],
-        'full'  => $fish['full_name'],
-        'price' => $fish['price_range']
-];
 mysqli_close($db);
 ?>
 <!doctype html>
@@ -80,7 +70,10 @@ mysqli_close($db);
     </section>
     <div>
         <a class="button" href="products.php">Terug naar productpagina</a>
-        <a class="button" href="fishbasket.php?id=<?= $fishId?>">Reserveren</a>
+        <form action="add_to_fishbasket.php" method="post">
+            <input type="hidden" name="id" value="<?= $fish['id']; ?>">
+            <button type="submit">Reserveren</button>
+        </form>
     </div>
 </div>
 </main>
