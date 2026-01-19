@@ -154,9 +154,9 @@ header {
     text-align: center;
     gap: 20px;
     align-items: center;
-    padding: 150px 70px;
+    padding: 70px 70px 200px;
     border-radius: 5px;
-    background-image: url(../images/fishheader.jpg);
+    background-image: url(../images/bannerorders.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
