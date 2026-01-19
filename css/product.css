@@ -53,8 +53,8 @@ nav {
 }
 
 header h1 {
-    font-size: 3rem;
-    padding-top: 18vh;
+    font-size: 2.4 rem;
+
 }
 
 nav div {
@@ -62,9 +62,7 @@ nav div {
     flex-direction: row;
 }
 
-header P {
-    font-size: 1.5rem;
-}
+
 
 a {
     text-decoration: none;
@@ -149,18 +147,47 @@ footer {
 }
 
 header {
-    font-family: "Playball", cursive;
-    color: #f68f51;
-    text-align: center;
-    gap: 20px;
-    align-items: center;
-    padding: 70px 70px 200px;
-    border-radius: 5px;
-    background-image: url(../images/bannerorders.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        display: flex;
+        flex-direction: column;
+        font-family: "Playball", cursive;
+        color: #f68f51;
+        justify-content: center;
+        background-image: url("../images/bannercontact.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        max-width: 100vw;
+        height: 55vh;
+        text-align: center;
+        padding-bottom: 3.5vh;
+        background-color: #fffcf8;
+
 }
+
+    header p {
+       font-size:  1.5rem;
+        color: #f68f51;
+    }
+
+    header {
+        align-items: center;
+
+    }
+
+    header div {
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+
+}
+
+header div {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+
 
 .logo img:hover {
     transform: scale(1.06);

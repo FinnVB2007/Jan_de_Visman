@@ -113,14 +113,16 @@ form span {
 }
 
 P {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-family: "Jost", sans-serif;
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 h2 {
+    font-family: "Jost", sans-serif;
     font-size: 1.7rem;
 }
 
@@ -139,6 +141,7 @@ h5 {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffcf8;
 }
 
 .playball-regular {
