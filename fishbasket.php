@@ -9,6 +9,8 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
     exit;
 }
 
+
+
 $cart = $_SESSION['cart'];
 ?>
 
@@ -55,6 +57,7 @@ $cart = $_SESSION['cart'];
             <form method="post" action="removeProduct.php">
                 <input type="hidden" name="index" value="<?= $index; ?>">
                 <button type="submit">Verwijderen</button>
+                <button type="button">Reserveren</button>
             </form>
         </article>
     <?php endforeach; ?>
