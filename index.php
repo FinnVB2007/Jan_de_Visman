@@ -36,7 +36,7 @@ session_start();
     </div>
 </nav>
 <?php if (isset($_SESSION['empty'])) { ?>
-    <span class="help is-danger"><?= 'Er zitten nog geen producten in uw mandje, klik op producten om iets te reserveren. '?> </span>
+    <span class="help is-danger"><?= 'Er zitten nog geen producten in uw netje, klik op producten om iets te reserveren. '?> </span>
 <?php } ?>
 
 <?php
