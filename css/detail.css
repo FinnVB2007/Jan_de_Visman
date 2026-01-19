@@ -205,3 +205,29 @@ nav a:hover {
 .fishBasket a {
     padding-top: 60%;
 }
+
+div button {
+    font-family: "Playball", cursive;
+    background-color: #fcd0bd;
+    border: 2px solid #fcd0bd;
+    color: black;
+    padding: 2vh;
+    gap: 20px;
+    border-radius: 10%;
+    font-size: 1rem;
+    margin-left: 0.57vw;
+    margin-top: 4vh;
+
+}
+
+div button:hover {
+    background-color: #f68f51;
+    border: 2px solid #f68f51;
+    transition: .2s;
+}
+
+div button:active {
+    background-color: #bde7fa;
+    border: 2px solid #bde7fa;
+    transition: .2s;
+}
