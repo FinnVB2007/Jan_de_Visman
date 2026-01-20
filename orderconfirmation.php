@@ -20,5 +20,10 @@
     <div class="links">
     </div>
 </nav>
+<header>
+    <h1>Bedankt voor het reserveren!</h1>
+    <h3>Jan gaat zo snel mogelijk contact met u opnemen voor de bestelling!</h3>
+    <a class="buttons" href="index.php">Ga terug</a>
+</header>
 
 </html>
