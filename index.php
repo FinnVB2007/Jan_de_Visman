@@ -34,7 +34,7 @@ session_start();
             <a href="fishbasket.php" class="mand"><img src="images/Fishnet.png" alt="Visnet"></a>
 
             <?php if (!empty($_SESSION['cart'])): ?>
-                <span class="cart-notice">Er zitten <?= count($_SESSION['cart']) ?> product(en) in uw netje</span>
+                <span class="cart-notice">Er zitten product(en) in uw netje</span>
             <?php endif; ?>
         </section>
     </div>

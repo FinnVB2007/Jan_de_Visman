@@ -68,6 +68,7 @@ $cart = $_SESSION['cart'];
             <section class="fishBasket">
                 <a href="fishbasket.php"><img src="images/Fishnet.png" alt="Vismandje"></a>
             </section>
+
         </div>
     </nav>
 

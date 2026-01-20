@@ -50,7 +50,11 @@ mysqli_close($db);
             <a href="contact.php">Contact</a>
             <section class="fishBasket">
                 <a href="fishbasket.php"><img src="images/Fishnet.png" alt="Vismandje"></a>
+                <?php if (!empty($_SESSION['cart'])): ?>
+                    <span class="cart-notice">Er zitten product(en) in uw netje</span>
+                <?php endif; ?>
             </section>
+
         </div>
     </nav>
 
