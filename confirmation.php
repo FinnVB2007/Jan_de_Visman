@@ -44,7 +44,7 @@ session_destroy();
         Bedankt voor uw bericht <?=$name?>.
     </h1>
     <p>We nemen zo spoedig mogelijk contact met u op.</p>
-    <a href="index.php">Bevestigen</a>
+    <a href="index.php">Ga terug</a>
 </header>
 <main>
 </main>
