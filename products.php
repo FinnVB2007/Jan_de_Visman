@@ -51,27 +51,28 @@ mysqli_close($db);
 
 <header>
     <div>
-        <h1>Bekijk ons assortiment!</h1>
-        <p>Onze verse visproducten zijn van hoge kwaliteit en slagen er zeker in jou te laten genieten!</p>
+    <h1>Bekijk ons assortiment!</h1>
+    <p>Onze verse visproducten zijn van hoge kwaliteit en slagen er zeker in jou te laten genieten!</p>
     </div>
 </header>
 
 <section class="product">
-    <main>
-        <?php foreach ($morefishes as $i => $fish) { ?>
-            <article>
-                <h2><?= $fish['name'] ?></h2>
-                <p><?= $fish['price_range'] ?></p>
-                <div class="buttons">
-                    <a href="detail.php?id=<?= $fish['id'] ?>">Details</a>
-                    <form action="add_to_fishbasket.php" method="post">
-                        <input type="hidden" name="id" value="<?= $fish['id']; ?>">
-                        <button type="submit">Reserveren</button>
-                    </form>
-                </div>
-            </article
+<main>
+    <?php foreach ($morefishes as $i => $fish) { ?>
+    <article>
+        <h2><?= $fish['name'] ?></h2>
+        <p><?= $fish['price_range'] ?></p>
+        <p><?= $fish['image'] ?></p>
+        <div class="buttons">
+        <a href="detail.php?id=<?= $fish['id'] ?>">Details</a>
+        <form action="add_to_fishbasket.php" method="post">
+            <input type="hidden" name="id" value="<?= $fish['id']; ?>">
+            <button type="submit">Reserveren</button>
+        </form>
+        </div>
+    </article
         <?php } ?>
-    </main>
+</main>
 </section>
 
 <footer>
@@ -92,5 +93,3 @@ mysqli_close($db);
 
 </body>
 </html>
-
-

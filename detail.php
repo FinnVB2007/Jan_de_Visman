@@ -3,7 +3,7 @@ session_set_cookie_params(0);
 session_start();
 /** @var mysqli $db */
 
-$id = $_GET['id'];
+
 if (!isset($_GET['id']) || $_GET['id'] == '') {
     header('Location: index.php');
     exit;
@@ -59,23 +59,23 @@ mysqli_close($db);
 </head>
 <body>
 <main>
-    <div class="container px-4">
-        <h1 class="title mt-4"><?= $fish['name'] ?></h1>
-        <section class="content">
-            <ul>
-                <li>Volledige naam: <?= $fish['full_name'] ?></li>
-                <li>Price range: <?= $fish['price_range'] ?></li>
-                <img src="image.php?id=<?php echo $id; ?>" width="250">
-            </ul>
-        </section>
-        <div>
-            <a class="button" href="products.php">Terug naar productpagina</a>
-            <form action="add_to_fishbasket.php" method="post">
-                <input type="hidden" name="id" value="<?= $fish['id']; ?>">
-                <button type="submit">Reserveren</button>
-            </form>
-        </div>
+<div class="container px-4">
+    <h1 class="title mt-4"><?= $fish['name'] ?></h1>
+    <section class="content">
+        <ul>
+            <li>Volledige naam: <?= $fish['full_name'] ?></li>
+            <li>Price range: <?= $fish['price_range'] ?></li>
+            <li>Foto: <?= $fish['image'] ?></li>
+        </ul>
+    </section>
+    <div>
+        <a class="button" href="products.php">Terug naar productpagina</a>
+        <form action="add_to_fishbasket.php" method="post">
+            <input type="hidden" name="id" value="<?= $fish['id']; ?>">
+            <button type="submit">Reserveren</button>
+        </form>
     </div>
+</div>
 </main>
 <footer>
     <div class="footerLeft">
@@ -95,3 +95,4 @@ mysqli_close($db);
 
 
 </html>
+

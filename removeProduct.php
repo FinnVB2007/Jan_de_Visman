@@ -1,16 +1,30 @@
 <?php
+
 session_start();
 
-if (isset($_POST['index']) && isset($_SESSION['cart'][$_POST['index']])) {
-    $index = (int)$_POST['index']; // veiligheid
-    unset($_SESSION['cart'][$index]); // verwijder product
-    $_SESSION['cart'] = array_values($_SESSION['cart']); // herindexeer array
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: fishbasket.php');
+    exit;
 }
 
-// Check of de cart leeg is
-if (empty($_SESSION['cart'])) {
-    header('Location: index.php');
+$index = null;
+if (isset($_POST['index'])) {
+    $index = (int)$_POST['index'];
+} elseif (isset($_POST['remove_index'])) {
+    $index = (int)$_POST['remove_index'];
+}
+
+if ($index === null || !isset($_SESSION['cart'][$index])) {
+    header('Location: fishbasket.php');
     exit;
+}
+
+// remove and reindex
+unset($_SESSION['cart'][$index]);
+$_SESSION['cart'] = array_values($_SESSION['cart']);
+
+if (empty($_SESSION['cart'])) {
+    $_SESSION['empty'] = true;
 }
 
 header('Location: fishbasket.php');

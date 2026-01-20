@@ -233,10 +233,13 @@ nav a:hover {
 }
 
 main article {
-    padding-left: 25vw;
     display: flex;
     flex-direction: column;
     padding-bottom: 3vh;
+}
+
+main article button {
+    width: 6.5vw;
 }
 
 button {
@@ -317,5 +320,16 @@ form {
 display: flex;
     gap: 8px;
 
+}
+
+form span {
+    color: #b30303;
+}
+
+.endForm {
+text-align: center;
+    margin-left: 17.5vw;
+    margin-bottom: 3vh;
+    width: 13vw;
 }
 
