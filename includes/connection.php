@@ -8,3 +8,4 @@ $password = "";
 
 
 $db = mysqli_connect($host, $user, $password, $database);
+
