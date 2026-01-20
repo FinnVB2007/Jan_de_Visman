@@ -1,4 +1,5 @@
 <?php
+//ff voor push
 /** @var mysqli $db */
 
 require_once "includes/connection.php";
@@ -93,3 +94,4 @@ mysqli_close($db);
 
 </body>
 </html>
+
