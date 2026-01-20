@@ -26,7 +26,8 @@ if (!isset($_SESSION['cart'])) {
 
 // Product toevoegen
 $_SESSION['cart'][] = [
-    'name'  => $fish['name'],
+    'id' => $id,
+    'name' => $fish['name'],
     'full'  => $fish['full_name'],
     'price' => $fish['price_range']
 ];

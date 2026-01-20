@@ -29,6 +29,7 @@ $query = "
         o.email,
         o.number,
         f.name AS fish_name
+        ofi.quantity 	
     FROM orders o
     LEFT JOIN order_fish ofi ON o.id = ofi.order_id
     LEFT JOIN fishes f ON f.id = ofi.fish_id
@@ -47,6 +48,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                 'name' => $row['name'],
                 'email' => $row['email'],
                 'number' => $row['number'],
+                'quantity' => $row['quantity'],
                 'reservation' => []
         ];
     }
