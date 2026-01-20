@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $host = "127.0.0.1";
 $database = "jan_de_visman";
 $user = "root";
@@ -8,7 +8,7 @@ $password = "";
 $db = mysqli_connect($host, $user, $password, $database);
 
 if (isset($_POST['submit'])) {
-    session_start();
+
     $name = mysqli_escape_string($db, $_POST['name']);
     $email = mysqli_escape_string($db, $_POST['email']);
     $message = mysqli_escape_string($db, $_POST['message']);
@@ -64,7 +64,11 @@ if (isset($_POST['submit'])) {
         <a href="contact.php">Contact</a>
         <section class="fishBasket">
             <a href="fishbasket.php"><img src="images/Fishnet.png" alt="Vismandje"></a>
+            <?php if (!empty($_SESSION['cart'])): ?>
+                <span class="cart-notice">Er zitten product(en) in uw netje</span>
+            <?php endif; ?>
         </section>
+
     </div>
 </nav>
 <header>
