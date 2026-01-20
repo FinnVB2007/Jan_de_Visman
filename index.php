@@ -32,9 +32,14 @@ session_start();
         <a href="contact.php">Contact</a>
         <section class="fishBasket">
             <a href="fishbasket.php" class="mand"><img src="images/Fishnet.png" alt="Visnet"></a>
+
+            <?php if (!empty($_SESSION['cart'])): ?>
+                <span class="cart-notice">Er zitten <?= count($_SESSION['cart']) ?> product(en) in uw netje</span>
+            <?php endif; ?>
         </section>
     </div>
 </nav>
+
 <?php if (isset($_SESSION['empty'])) { ?>
     <span class="help is-danger"><?= 'Er zitten nog geen producten in uw netje, klik op producten om iets te reserveren. '?> </span>
 <?php } ?>

@@ -270,3 +270,17 @@ nav a:hover {
 .fishBasket a {
     padding-top: 60%;
 }
+
+.notificationImg {
+padding-left: 88.5vw;
+    width: 2vw;
+    height: auto;
+}
+
+nav span {
+    border-radius: 10%;
+    font-size: 1rem;
+    text-align: center;
+    width: 5vw;
+    height: 2.5vh;
+}
