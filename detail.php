@@ -72,7 +72,7 @@ mysqli_close($db);
         <a class="button" href="products.php">Terug naar productpagina</a>
         <form action="add_to_fishbasket.php" method="post">
             <input type="hidden" name="id" value="<?= $fish['id']; ?>">
-            <button type="submit">Reserveren</button>
+            <button class="endForm" type="submit">Reserveren</button>
         </form>
     </div>
 </div>
