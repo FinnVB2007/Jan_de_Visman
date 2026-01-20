@@ -1,0 +1,73 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: adminLogin.php");
+    exit;
+}
+
+// ID ophalen + beveiligen
+if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+    die("Ongeldig bericht ID");
+}
+
+$orderId = (int)$_GET['id'];
+
+// Connect to database
+require_once 'includes/connection.php';
+
+// Fetch data
+$query = "SELECT id, name, email, message FROM forms WHERE id = $orderId LIMIT 1";
+$result = mysqli_query($db, $query);
+$character = mysqli_fetch_assoc($result);
+
+if (!$character) {
+    mysqli_close($db);
+    header('Location: adminContact.php');
+    exit;
+}
+
+// Delete query
+if (isset($_POST['confirm'])) {
+    mysqli_query($db, "DELETE FROM forms WHERE id = $orderId");
+    mysqli_close($db);
+    header('Location: adminContact.php');
+    exit;
+}
+
+// Cancel deletion
+if (isset($_POST['cancel'])) {
+    mysqli_close($db);
+    header('Location: adminDetails.php?id=' . $orderId);
+    exit;
+}
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <a href="adminOrders.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+    </div>
+    <div class="links">
+        <a href="adminOrders.php">Bestellingen</a>
+        <a href="adminContact.php">Berichten</a>
+        <a href="adminLogout.php">Logout</a>
+    </div>
+</nav>
+
+<main>
+    <h2>Delete Order</h2>
+    <p>Are you sure you want to delete this message from <strong><?= htmlspecialchars($character['name']) ?></strong>?</p>
+
+    <form method="post">
+        <button type="submit" name="confirm">Yes, delete</button>
+        <button type="submit" name="cancel">Cancel</button>
+    </form>
+</main>
+</body>
+</html>

@@ -1,65 +1,64 @@
 <?php
-/** @var mysqli $db */
-require_once "includes/connection.php";
 session_start();
-session_destroy();
-
-if (isset($_POST['submit'])) {
-    $formId = mysqli_escape_string($db, $_POST['id']);
-    $name = mysqli_escape_string($db, $_POST['name']);
-    $email = mysqli_escape_string($db, $_POST['email']);
-    $message = mysqli_escape_string($db, $_POST['message']);
-
-    $form = [
-            'name' => $name,
-            'email' => $email,
-            'message' => $message,
-    ];
-
-    $errors = [];
-
-    if (empty($name)) {
-        $errors['name'] = 'De naam moet ingevuld zijn';
-    }
-
-    if (empty($email)) {
-        $errors['email'] = 'Het e-mailadres moet ingevuld zijn';
-    }
-
-    if (empty($message)) {
-        $errors['message'] = 'Het bericht moet ingevuld zijn';
-    }
-
-    if (empty($errors)) {
-
-        $query = "UPDATE forms
-SET name = '$name', email = '$email', message = '$message'
-WHERE id = '$formId'";
-        $result = mysqli_query($db, $query);
-
-        if ($result) {
-            header('Location: index.php');
-            exit;
-        } else {
-            $errors[] = 'Something went wrong in your database query: ' . mysqli_error($db);
-        }
-
-    }
-} else if (isset($_GET['id'])) {
-    $formId = $_GET['id'];
-
-    $query = "SELECT id, name, email, message FROM forms WHERE id = $formId";
-    $result = mysqli_query($db, $query);
-    if (mysqli_num_rows($result) == 1) {
-        $form = mysqli_fetch_assoc($result);
-    } else {
-
-    }
-} else {
-
+if (!isset($_SESSION['user_id'])) {
+    header("Location: adminLogin.php");
+    exit;
 }
 
+
+//connect to database
+//Fetch data and join tables
+//loop through the result
+//create an array
+//close database
+
+//load the data from the created array based of the id per row
+
+//---------------------------------
+
+
+//connect db
+require_once "includes/connection.php";
+
+//get the data from the database with a SQL query
+//get the data from the database with a SQL query
+$query = "
+    SELECT 
+        o.id,
+        o.name,
+        o.email,
+        o.number,
+        f.name AS fish_name
+    FROM orders o
+    LEFT JOIN order_fish ofi ON o.id = ofi.order_id
+    LEFT JOIN fishes f ON f.id = ofi.fish_id
+    ORDER BY o.id
+";
+
+$result = mysqli_query($db, $query);
+
+// loop through the result to create a custom array
+$orders = [];
+
+while ($row = mysqli_fetch_assoc($result)) {
+    if (!isset($orders[$row['id']])) {
+        $orders[$row['id']] = [
+                'id' => $row['id'],
+                'name' => $row['name'],
+                'email' => $row['email'],
+                'number' => $row['number'],
+                'reservation' => []
+        ];
+    }
+
+    // voeg vis toe als die bestaat
+    if (!empty($row['fish_name'])) {
+        $orders[$row['id']]['reservation'][] = $row['fish_name'];
+    }
+}
+//close connection
 mysqli_close($db);
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -75,37 +74,46 @@ mysqli_close($db);
 
 <nav>
     <div class="logo">
-        <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+        <a href="adminOrders.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
     </div>
     <div class="links">
-        <a href="adminOrders.php">Admin</a>
-        <a href="index.php">Home</a>
-        <a href="products.php">Producten</a>
-        <a href="gallery.php">Galerij</a>
-        <a href="contact.php">Contact</a>
+        <a href="adminOrders.php">Bestellingen</a>
+        <a href="adminContact.php">Berichten</a>
+        <a href="adminLogout.php">Logout</a>
+
     </div>
 </nav>
 
-<form action="" method="post" enctype="multipart/form-data">
-    <div class="data-field">
-        <label for="name">name</label>
-        <input id="name" type="text" name="name" value="<?= htmlentities($form['name'] ?? '') ?>"/>
+<main>
+    <table class="table mx-auto">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Naam</th>
+            <th>E-mail</th>
+            <th>Telefoonnummer</th>
+            <th>Producten</th>
 
-    </div>
-    <div class="data-field">
-        <label for="email">email</label>
-        <input id="email" type="text" name="email" value="<?= htmlentities($form['email'] ?? '') ?>"/>
+        </tr>
+        </thead>
+        <tbody>
 
-    </div>
-    <div class="data-field">
-        <label for="message">message</label>
-        <input id="message" type="text" name="message" value="<?= htmlentities($form['message'] ?? '') ?>"/>
+        <?php //loop through all albums in the collection
+        foreach ($orders as $i => $order) {
+            ?>
+            <tr>
+                <td><?= $order['id'] ?></td>
+                <td><?= $order['name'] ?></td>
+                <td><?= $order['email'] ?></td>
+                <td><?= $order['number'] ?></td>
+                <td><?= implode(', ', $order['reservation']) ?></td>
+            </tr>
+        <?php } ?>
+        </tbody>
+    </table>
 
-    </div>
-</form>
-<div>
-    <a href="index.php">Go back to the list</a>
-</div>
+
+</main>
 
 <footer>
     <div class="footerLeft">
