@@ -22,7 +22,7 @@
 </nav>
 <header>
     <h1>Bedankt voor het reserveren!</h1>
-    <h3>Jan gaat zo snel mogelijk contact met u opnemen voor de bestelling!</h3>
+    <p>We nemen zo spoedig mogelijk contact met u op voor de bestelling.</p>
     <a class="buttons" href="index.php">Ga terug</a>
 </header>
 
