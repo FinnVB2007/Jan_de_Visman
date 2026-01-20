@@ -10,7 +10,7 @@ session_start();
 require_once 'includes/connection.php';
 
 $errors = [];
-$redirect = $_GET['redirect'] ?? 'index.php';
+$redirect = $_GET['redirect'] ?? 'adminOrders.php';
 
 if (isset($_POST['login'])) {
     $username = trim($_POST['username'] ?? '');
@@ -50,23 +50,53 @@ if (isset($_POST['login'])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>Admin</title>
 </head>
+
 <body>
+<nav>
+<div class="logo">
+    <a href="adminLogin.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+</div>
+<div class="links">
+    <a href="index.php">Hoofdpagina</a>
+</div>
+</nav>
+<main>
 <section>
     <form method="post">
         <input type="hidden" name="redirect" value="<?= htmlspecialchars($redirect) ?>">
         <div>
-            <label>Username</label>
+            <label>Gebruikersnaam</label>
             <input type="text" name="username" value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
         </div>
         <div>
-            <label>Password</label>
+            <label>Wachtwoord</label>
             <input type="password" name="password">
         </div>
         <button type="submit" name="login">Login</button>
         <?php if (isset($errors['login'])) echo "<p>{$errors['login']}</p>"; ?>
     </form>
 </section>
+</main>
+<footer>
+    <div class="footerLeft">
+        <div>
+            <a href="index.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+        </div>
+        <div>
+            <p>© 2022 Jan de Visman</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/jandevisman/"><img src="images/facebooklogo.png" alt="" class="mediaLogo"></a>
+            <a href="https://www.instagram.com/jande_visman/"><img src="images/instalogo.png" alt="" class="mediaLogo"></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
