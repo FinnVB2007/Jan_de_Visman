@@ -240,6 +240,11 @@ span {
     font-family: "Jost", sans-serif;
 }
 
+span a {
+    text-decoration: underline;
+    font-family: "Jost", sans-serif;
+}
+
 nav a:hover {
     transform: scale(1.2);
     transition: 6s;

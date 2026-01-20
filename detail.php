@@ -3,7 +3,7 @@ session_set_cookie_params(0);
 session_start();
 /** @var mysqli $db */
 
-
+$id = $_GET['id'];
 if (!isset($_GET['id']) || $_GET['id'] == '') {
     header('Location: index.php');
     exit;
@@ -65,7 +65,7 @@ mysqli_close($db);
         <ul>
             <li>Volledige naam: <?= $fish['full_name'] ?></li>
             <li>Price range: <?= $fish['price_range'] ?></li>
-            <li>Foto: <?= $fish['image'] ?></li>
+            <img src="image.php?id=<?php echo $id; ?>" width="250">
         </ul>
     </section>
     <div>

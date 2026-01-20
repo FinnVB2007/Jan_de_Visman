@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (isset($_POST['submit'])) {
+    unset($_SESSION['cart']);
+    header('location:index.php');
+}
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,5 +31,12 @@
     <div class="links">
     </div>
 </nav>
+<header>
+    <h1>Bedankt voor het reserveren!</h1>
+    <p>We nemen zo spoedig mogelijk contact met u op voor de bestelling.</p>
+    <form action="" method="post">
+        <button name="submit" type="submit">Ga terug</button>
+    </form>
+</header>
 
 </html>

@@ -1,4 +1,5 @@
 <?php
+//ff voor push
 /** @var mysqli $db */
 
 require_once "includes/connection.php";
@@ -37,7 +38,7 @@ mysqli_close($db);
         <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
     </div>
     <div class="links">
-        <a href="adminOrders.php">Admin</a>
+        <a href="admin.php">Admin</a>
         <a href="index.php">Home</a>
         <a href="products.php">Producten</a>
         <a href="gallery.php">Galerij</a>
@@ -62,10 +63,9 @@ mysqli_close($db);
     <article>
         <h2><?= $fish['name'] ?></h2>
         <p><?= $fish['price_range'] ?></p>
-        <p><?= $fish['image'] ?></p>
         <div class="buttons">
         <a href="detail.php?id=<?= $fish['id'] ?>">Details</a>
-        <form action="addToFishbasket.php" method="post">
+            <form action="addToFishbasket.php" method="post">
             <input type="hidden" name="id" value="<?= $fish['id']; ?>">
             <button type="submit">Reserveren</button>
         </form>
@@ -93,3 +93,4 @@ mysqli_close($db);
 
 </body>
 </html>
+

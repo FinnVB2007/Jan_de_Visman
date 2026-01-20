@@ -5,6 +5,7 @@ P {
 }
 
 h1 {
+    font-family: "Jost", sans-serif;
     font-size: 2rem;
 }
 
@@ -206,27 +207,27 @@ nav a:hover {
     padding-top: 60%;
 }
 
-div button {
+main form button {
     font-family: "Playball", cursive;
     background-color: #fcd0bd;
     border: 2px solid #fcd0bd;
     color: black;
-    padding: 2vh;
+    padding: 1.5vh;
     gap: 20px;
-    border-radius: 10%;
-    font-size: 1rem;
-    margin-left: 0.57vw;
-    margin-top: 4vh;
-
+    border-radius: 15%;
+    font-size: 1.2rem;
+    width: 6vw;
+    margin-left: 1vw;
+    margin-top: 3vh;
 }
 
-div button:hover {
+main form button:hover {
     background-color: #f68f51;
     border: 2px solid #f68f51;
     transition: .2s;
 }
 
-div button:active {
+main form button:active {
     background-color: #bde7fa;
     border: 2px solid #bde7fa;
     transition: .2s;
