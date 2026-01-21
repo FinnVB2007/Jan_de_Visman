@@ -284,7 +284,11 @@ footer {
     padding-top: 60%;
 }
 
-span {
+form span {
+    color: #b30303;
+}
+
+nav span {
 
     display: flex;
     flex-direction: column;
