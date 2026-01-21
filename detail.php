@@ -49,9 +49,10 @@ mysqli_close($db);
             <a href="gallery.php">Galerij</a>
             <a href="contact.php">Contact</a>
             <section class="fishBasket">
-                <a href="fishbasket.php"><img src="images/Fishnet_1.png" alt="Vismandje"></a>
                 <?php if (!empty($_SESSION['cart'])): ?>
-                    <span class="cart-notice">Er zitten product(en) in uw netje</span>
+                    <img src="images/Fishnet_2.png" alt="Visnet met producten">
+                <?php else: ?>
+                    <img src="images/Fishnet_1.png" alt="Leeg visnet">
                 <?php endif; ?>
             </section>
 
