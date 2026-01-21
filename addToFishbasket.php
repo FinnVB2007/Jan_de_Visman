@@ -35,5 +35,5 @@ $_SESSION['cart'][] = [
 mysqli_close($db);
 
 // Ga naar winkelmand
-header("Location: fishbasket.php");
+header("Location: products.php");
 exit;
