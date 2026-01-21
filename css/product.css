@@ -309,7 +309,7 @@ main form button {
     gap: 20px;
     border-radius: 15%;
     font-size: 1.2rem;
-    width: 6vw;
+    width: 100%;
     margin-left: 1vw;
 }
 
@@ -356,6 +356,6 @@ main form a {
     gap: 20px;
     border-radius: 15%;
     font-size: 1.2rem;
-    width: 6vw;
+    width: 100%;
 
 }
