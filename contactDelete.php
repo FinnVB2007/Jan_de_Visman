@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if (!isset($_SESSION['user_id'])) {
     header("Location: adminLogin.php");
     exit;
@@ -41,6 +42,7 @@ if (isset($_POST['cancel'])) {
     exit;
 }
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -49,9 +51,12 @@ if (isset($_POST['cancel'])) {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <nav>
     <div class="logo">
-        <a href="adminOrders.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
+        <a href="adminOrders.php">
+            <img src="images/Logo_JandeVisman.png" alt="Jan de Visman">
+        </a>
     </div>
     <div class="links">
         <a href="adminOrders.php">Bestellingen</a>
@@ -62,12 +67,19 @@ if (isset($_POST['cancel'])) {
 
 <main>
     <h2>Delete Order</h2>
-    <p>Are you sure you want to delete this message from <strong><?= htmlspecialchars($character['name']) ?></strong>?</p>
+
+    <p>
+        Are you sure you want to delete this message from
+        <strong><?= htmlspecialchars($character['name']) ?></strong>?
+    </p>
 
     <form method="post">
         <button type="submit" name="confirm">Yes, delete</button>
-        <button type="submit" name="cancel">Cancel</button>
     </form>
+    <a href="contactDetails.php?id=<?= $orderId ?>" class="button">
+        Annuleren
+    </a>
 </main>
+
 </body>
 </html>
