@@ -262,11 +262,6 @@ footer {
     width: 5vw;
 }
 
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
-}
-
 
 .fishBasket a:hover {
     background-color: rgba(246, 143, 81, 0);
