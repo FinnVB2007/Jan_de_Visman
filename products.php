@@ -68,6 +68,7 @@ mysqli_close($db);
     <article>
         <h2><?= $fish['name'] ?></h2>
         <p><?= $fish['price_range'] ?></p>
+        <img src="image.php?id=<?php echo $fish['id']; ?>" width="250">
         <div class="buttons">
         <a href="detail.php?id=<?= $fish['id'] ?>">Details</a>
             <form action="addToFishbasket.php" method="post">
