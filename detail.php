@@ -73,7 +73,9 @@ mysqli_close($db);
         </ul>
     </section>
     <div>
+        <form action="products.php">
         <a class="button" href="products.php">Terug naar productpagina</a>
+        </form>
         <form action="addToFishbasket.php" method="post">
             <input type="hidden" name="id" value="<?= $fish['id']; ?>">
             <button type="submit">Reserveren</button>
