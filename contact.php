@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
         <section class="fishBasket">
-            <a href="fishbasket.php"><img src="images/Fishnet.png" alt="Vismandje"></a>
+            <a href="fishbasket.php"><img src="images/Fishnet_1.png" alt="Vismandje"></a>
             <?php if (!empty($_SESSION['cart'])): ?>
                 <span class="cart-notice">Er zitten product(en) in uw netje</span>
             <?php endif; ?>
