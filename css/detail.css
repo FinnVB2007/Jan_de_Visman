@@ -233,6 +233,19 @@ main form button:active {
     transition: .2s;
 }
 
+main form a {
+    font-family: "Playball", cursive;
+    background-color: #fcd0bd;
+    border: 2px solid #fcd0bd;
+    color: black;
+    padding: 1.5vh;
+    gap: 20px;
+    border-radius: 15%;
+    font-size: 1.2rem;
+    width: 6vw;
+    margin-left: 1vw;
+}
+
 span {
 
     display: flex;

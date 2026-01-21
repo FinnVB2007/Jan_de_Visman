@@ -345,3 +345,16 @@ nav span {
     height: 2.2vh;
     margin: 0 auto;
 }
+
+main form a {
+    font-family: "Playball", cursive;
+    background-color: #fcd0bd;
+    border: 2px solid #fcd0bd;
+    color: black;
+    padding: 1.5vh;
+    gap: 20px;
+    border-radius: 15%;
+    font-size: 1.2rem;
+    width: 6vw;
+
+}

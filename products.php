@@ -68,9 +68,10 @@ mysqli_close($db);
     <article>
         <h2><?= $fish['name'] ?></h2>
         <p><?= $fish['price_range'] ?></p>
-        <img src="image.php?id=<?php echo $fish['id']; ?>" width="250">
         <div class="buttons">
+            <form action="detail.php">
         <a href="detail.php?id=<?= $fish['id'] ?>">Details</a>
+            </form>
             <form action="addToFishbasket.php" method="post">
             <input type="hidden" name="id" value="<?= $fish['id']; ?>">
             <button type="submit">Reserveren</button>
