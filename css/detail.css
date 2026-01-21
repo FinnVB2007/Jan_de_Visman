@@ -268,3 +268,11 @@ nav span {
     height: 2.2vh;
     margin: 0 auto;
 }
+
+.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e0d9cc;
+}
