@@ -8,7 +8,7 @@ if (!isset($_SESSION['order_contact']) || empty($_SESSION['cart'])) {
     header('Location: index.php');
     exit;
 }
-/*
+
 // Haal en escapen van contactgegevens
 $name = mysqli_real_escape_string($db, $_SESSION['order_contact']['name']);
 $email = mysqli_real_escape_string($db, $_SESSION['order_contact']['email']);
@@ -41,7 +41,7 @@ if (!empty($values)) {
         die("Fout bij toevoegen van order_fish: " . mysqli_error($db));
     }
 }
-*/
+
 ?>
 
 
