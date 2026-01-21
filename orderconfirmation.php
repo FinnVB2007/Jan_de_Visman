@@ -46,7 +46,7 @@ if (!empty($values)) {
 unset($_SESSION['cart']);
 
 // Redirect naar index of een bevestigingspagina
-header('Location: index.php');
+header('Location: orderconfirmation.php');
 exit;
 ?>
 
