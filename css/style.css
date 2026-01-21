@@ -400,3 +400,12 @@ form div {
     border: 2px solid #f68f51;
     transition: .2s;
 }
+
+.mainDelete {
+    text-align: center;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}

@@ -65,16 +65,16 @@ if (isset($_POST['cancel'])) {
     </div>
 </nav>
 
-<main>
-    <h2>Delete Order</h2>
+<main class="mainDelete">
+    <h2>Verwijder bericht</h2>
 
     <p>
-        Are you sure you want to delete this message from
+        Weet je zeker dat je het bericht wilt verwijderen van
         <strong><?= htmlspecialchars($character['name']) ?></strong>?
     </p>
 
     <form method="post">
-        <button type="submit" name="confirm">Yes, delete</button>
+        <button type="submit" name="confirm">Ja, verwijder</button>
     </form>
     <a href="contactDetails.php?id=<?= $orderId ?>" class="button">
         Annuleren
