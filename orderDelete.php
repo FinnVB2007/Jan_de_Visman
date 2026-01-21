@@ -76,11 +76,11 @@ if (isset($_POST['cancel'])) {
     </div>
 </nav>
 
-<main>
+<main class="mainDelete">
     <h2>Order verwijderen</h2>
 
     <p>
-        Weet je zeker dat je de order van
+        Weet je zeker dat je het order van
         <strong><?= htmlspecialchars($order['name']) ?></strong>
         wilt verwijderen?
     </p>
