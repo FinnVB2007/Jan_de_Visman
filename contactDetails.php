@@ -37,6 +37,10 @@ mysqli_close($db);
     <meta charset="utf-8">
     <title>Bericht details</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
 
