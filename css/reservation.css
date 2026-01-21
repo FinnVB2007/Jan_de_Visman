@@ -332,7 +332,7 @@ text-align: center;
     margin-bottom: 3vh;
     width: 13vw;
 }
-span {
+nav span {
 
     display: flex;
     flex-direction: column;
