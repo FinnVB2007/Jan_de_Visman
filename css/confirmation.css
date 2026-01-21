@@ -140,6 +140,11 @@ nav a {
     align-self: center;
 }
 
+.links a:hover {
+    background-color: #f68f51;
+    transform: scale(1.1);
+    transition: 1s;
+}
 
 nav div a {
     color: black;

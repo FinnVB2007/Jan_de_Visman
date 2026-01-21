@@ -109,13 +109,12 @@ nav div a {
 
 .links a:hover {
     background-color: #f68f51;
-    border: 2px solid #f68f51;
-    transition: .2s;
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .links a:active {
     background-color: #bde7fa;
-    border: 2px solid #bde7fa;
     transition: .2s;
 }
 
@@ -232,11 +231,6 @@ main section div img   {
 span a {
     text-decoration: underline;
     font-family: "Jost", sans-serif;
-}
-
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
 }
 
 
