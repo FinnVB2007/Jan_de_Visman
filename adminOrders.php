@@ -70,6 +70,7 @@ mysqli_close($db);
 </head>
 <body>
 
+
 <nav>
     <div class="logo">
         <a href="adminOrders.php">
@@ -84,6 +85,9 @@ mysqli_close($db);
 </nav>
 
 <main>
+    <h1 class="adminh1">
+        Bestellingen
+    </h1>
     <table class="table mx-auto">
         <thead>
         <tr>
@@ -116,7 +120,7 @@ mysqli_close($db);
 <footer>
     <div class="footerLeft">
         <div>
-            <a href="index.php">
+            <a href="adminOrders.php">
                 <img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo">
             </a>
         </div>

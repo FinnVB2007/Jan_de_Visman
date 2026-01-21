@@ -71,14 +71,12 @@ if (isset($_POST['login'])) {
 <section>
     <form method="post">
         <input type="hidden" name="redirect" value="<?= htmlspecialchars($redirect) ?>">
-        <div>
+
             <label>Gebruikersnaam</label>
             <input type="text" name="username" value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
-        </div>
-        <div>
+
             <label>Wachtwoord</label>
             <input type="password" name="password">
-        </div>
         <button type="submit" name="login">Login</button>
         <?php if (isset($errors['login'])) echo "<p>{$errors['login']}</p>"; ?>
     </form>
@@ -87,7 +85,7 @@ if (isset($_POST['login'])) {
 <footer>
     <div class="footerLeft">
         <div>
-            <a href="index.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+            <a href="adminOrders.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
         </div>
         <div>
             <p>© 2022 Jan de Visman</p>

@@ -91,6 +91,7 @@ if ($order === null) {
 </nav>
 
 <main class="container">
+    <section class="adminDetails">
     <h1>Order #<?= htmlspecialchars($order['id']) ?></h1>
 
     <p><strong>Naam:</strong> <?= htmlspecialchars($order['name']) ?></p>
@@ -104,14 +105,29 @@ if ($order === null) {
         <?php endforeach; ?>
     </ul>
 
-    <br>
 
-    <a href="adminOrders.php">← Terug naar bestellingen</a>
+    <div class="adminDiv">
+    <a href="adminOrders.php">Terug naar bestellingen</a>
 
     <a href="orderDelete.php?id=<?= $order['id'] ?>">
-        Verwijder order
+        Verwijder bestelling
     </a>
+        </div>
+    </section>
 </main>
-
+<footer>
+    <div class="footerLeft">
+        <div>
+            <a href="adminOrders.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+        </div>
+        <div>
+            <p>© 2022 Jan de Visman</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/jandevisman/"><img src="images/facebooklogo.png" alt="" class="mediaLogo"></a>
+            <a href="https://www.instagram.com/jande_visman/"><img src="images/instalogo.png" alt="" class="mediaLogo"></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -52,6 +52,7 @@ mysqli_close($db);
 </nav>
 
 <main class="container">
+    <section class="adminDetails">
     <h1>Bericht #<?= $message['id'] ?></h1>
 
     <p><strong>Naam:</strong> <?= htmlspecialchars($message['name']) ?></p>
@@ -60,9 +61,25 @@ mysqli_close($db);
     <p><?= nl2br(htmlspecialchars($message['message'])) ?></p>
 
     <br>
-    <a href="adminContact.php">← Terug naar berichten</a>
+        <div class="adminDiv">
+    <a href="adminContact.php">Terug naar berichten</a>
     <a href="contactDelete.php?id=<?= $id ?>">Delete Bericht</a>
+        </div>
+    </section>
 </main>
-
+<footer>
+    <div class="footerLeft">
+        <div>
+            <a href="adminOrders.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+        </div>
+        <div>
+            <p>© 2022 Jan de Visman</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/jandevisman/"><img src="images/facebooklogo.png" alt="" class="mediaLogo"></a>
+            <a href="https://www.instagram.com/jande_visman/"><img src="images/instalogo.png" alt="" class="mediaLogo"></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

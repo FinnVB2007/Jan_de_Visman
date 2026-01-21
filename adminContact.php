@@ -43,6 +43,11 @@ mysqli_close($db);
     </div>
 </nav>
 <main>
+    <h1 class="adminh1">
+        Berichten
+    </h1>
+
+
     <table class="table mx-auto">
         <thead>
         <tr>
@@ -70,14 +75,10 @@ mysqli_close($db);
     </table>
 </main>
 
-<div>
-    <a href="index.php">Go back to the list</a>
-</div>
-
 <footer>
     <div class="footerLeft">
         <div>
-            <a href="index.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+            <a href="adminOrders.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
         </div>
         <div>
             <p>© 2022 Jan de Visman</p>

@@ -288,3 +288,120 @@ nav span {
     height: 2.2vh;
     margin: 0 auto;
 }
+
+
+table {
+    table-layout: fixed;
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+th,
+td {
+    text-align: center;
+    vertical-align: top;
+    padding: 0.6em;
+}
+
+td a {
+    border: 0px solid rgba(246, 143, 81, 0);
+}
+
+td a:hover{
+    background-color: #f68f51;
+    border: 2px solid #f68f51;
+    transition: .2s;
+}
+
+.adminh1 {
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 79.7%;
+    max-width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: "Tw Cen MT";
+    font-size: 1.2rem;
+    padding-bottom: 4vh;
+    background-color: #fffcf8;
+    padding-top: 3vh;
+    gap: 2vh;
+}
+
+input {
+    padding: 1vw;
+}
+
+textarea {
+    padding-bottom: 7vw;
+    padding-left: 1vw;
+}
+
+form button {
+    margin-top: 2.5vw;
+    width: 100%;
+    max-width: 100vw;
+    height: 3.5vw;
+    background-color: #fcd0bd;
+    border: 2.5px #fcd0bd;
+}
+
+
+form button:hover {
+    background-color: #f68f51;
+    transition: .2s;
+}
+
+form button:active {
+    background-color: #bde7fa;
+    transition: .2s;
+}
+
+
+form span {
+    color: #b30303;
+}
+
+
+form div {
+
+}
+
+.adminDetails{
+    flex-direction: column;
+    text-align: center;
+    margin: 1vh 7vw;
+    align-items: center;
+}
+
+.container {
+    flex-direction: column;
+    align-content: center;
+}
+
+.adminDiv {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.adminDiv a{
+    margin: 0 0;
+    border: 2px solid rgba(246, 143, 81, 0);
+}
+
+.adminDiv a:hover {
+    background-color: #f68f51;
+    border: 2px solid #f68f51;
+    transition: .2s;
+}
