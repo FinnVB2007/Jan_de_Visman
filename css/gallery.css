@@ -162,10 +162,6 @@ footer {
     width: 5vw;
 }
 
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
-}
 
 .gallery img {
     width: 18vw;
@@ -247,11 +243,6 @@ header h1 {
     margin-bottom: 0;
     margin-top: 0;
     padding-top: 10vh;
-}
-
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
 }
 
 
