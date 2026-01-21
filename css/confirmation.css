@@ -71,10 +71,6 @@ header {
     transition: 1s;
 }
 
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
-}
 
 header a {
     display: flex;
@@ -140,6 +136,12 @@ nav a {
     align-self: center;
 }
 
+.links a:hover {
+    background-color: #f68f51;
+    transform: scale(1.1);
+    border-radius: 10%;
+    transition: 0.5s;
+}
 
 nav div a {
     color: black;

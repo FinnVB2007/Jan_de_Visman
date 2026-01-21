@@ -206,13 +206,13 @@ nav img {
 
 .links a:hover {
     background-color: #f68f51;
-    border: 2px solid #f68f51;
-    transition: .2s;
+    transform: scale(1.1);
+    border-radius: 10%;
+    transition: 0.5s;
 }
 
 .links a:active {
     background-color: #bde7fa;
-    border: 2px solid #bde7fa;
     transition: .2s;
 }
 
@@ -261,11 +261,6 @@ footer {
 
 .fishBasket img {
     width: 5vw;
-}
-
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
 }
 
 
