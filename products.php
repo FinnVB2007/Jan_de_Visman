@@ -39,18 +39,19 @@ mysqli_close($db);
         <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
     </div>
     <div class="links">
-        <a href="admin.php">Admin</a>
         <a href="index.php">Home</a>
         <a href="products.php">Producten</a>
         <a href="gallery.php">Galerij</a>
         <a href="contact.php">Contact</a>
         <section class="fishBasket">
-            <a href="fishbasket.php"><img src="images/Fishnet_1.png" alt="Vismandje"></a>
-            <?php if (!empty($_SESSION['cart'])): ?>
-                <span class="cart-notice">Er zitten product(en) in uw netje</span>
-            <?php endif; ?>
+            <a href="fishbasket.php" class="mand">
+                <?php if (!empty($_SESSION['cart'])): ?>
+                    <img src="images/Fishnet_2.png" alt="Visnet met producten">
+                <?php else: ?>
+                    <img src="images/Fishnet_1.png" alt="Leeg visnet">
+                <?php endif; ?>
+            </a>
         </section>
-
     </div>
 </nav>
 
