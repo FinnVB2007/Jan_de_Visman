@@ -49,11 +49,13 @@ mysqli_close($db);
             <a href="gallery.php">Galerij</a>
             <a href="contact.php">Contact</a>
             <section class="fishBasket">
-                <?php if (!empty($_SESSION['cart'])): ?>
-                    <img src="images/Fishnet_2.png" alt="Visnet met producten">
-                <?php else: ?>
-                    <img src="images/Fishnet_1.png" alt="Leeg visnet">
-                <?php endif; ?>
+                <a href="fishbasket.php" class="mand">
+                    <?php if (!empty($_SESSION['cart'])): ?>
+                        <img src="images/Fishnet_2.png" alt="Visnet met producten">
+                    <?php else: ?>
+                        <img src="images/Fishnet_1.png" alt="Leeg visnet">
+                    <?php endif; ?>
+                </a>
             </section>
 
         </div>
