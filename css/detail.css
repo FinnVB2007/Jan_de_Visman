@@ -124,7 +124,8 @@ nav img {
 .links a:hover {
     background-color: #f68f51;
     transform: scale(1.1);
-    transition: 1s;
+    border-radius: 10%;
+    transition: 0.5s;
 }
 
 .links a:active {
@@ -180,10 +181,6 @@ div a {
     width: 5vw;
 }
 
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
-}
 
 
 .fishBasket a:hover {
