@@ -43,15 +43,7 @@ if (!empty($values)) {
 }
 
 
-// Redirect naar index of een bevestigingspagina
-header('Location: orderconfirmation.php');
-exit;
 ?>
-
-
-
-?>
-
 
 
 <!doctype html>
@@ -79,7 +71,7 @@ exit;
 <header>
     <h1>Bedankt voor het reserveren!</h1>
     <p>We nemen zo spoedig mogelijk contact met u op voor de bestelling.</p>
-    <form action="" method="post">
+    <form action="index.php" method="post">
         <button name="submit" type="submit">Ga terug</button>
     </form>
 </header>
