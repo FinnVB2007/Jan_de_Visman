@@ -373,7 +373,7 @@ article {
 .hook-wrapper {
     position: fixed;
     right: 29vw;
-    top: -70vh; /* starting position */
+    top: -750vh; /* starting position */
     z-index: 10;
     pointer-events: auto;
 }
