@@ -108,17 +108,23 @@ mysqli_close($db);
 
 <script>
     const hook = document.querySelector('.hook-wrapper');
+    const footer = document.querySelector('footer');
 
-    const maxOffset = 550; // 🔴 STOP POINT (px)
     const speed = 0.4;
+    const margin = 100; // space above footer
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY * speed;
+
+        const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+        const maxOffset = footerTop - window.innerHeight + margin;
+
         const limitedScroll = Math.min(scrollY, maxOffset);
 
         hook.style.transform = `translateY(${limitedScroll}px)`;
     });
 </script>
+
 <script>
     document.getElementById('scrollTopHook').addEventListener('click', () => {
         window.scrollTo({
