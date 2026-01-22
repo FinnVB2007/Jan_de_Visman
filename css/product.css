@@ -361,7 +361,8 @@ main form a {
 
 article {
     display: flex;
-    width: 40%;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .info {
