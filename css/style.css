@@ -409,4 +409,43 @@ form div {
     justify-content: center;
     align-items: center;
     align-content: center;
+    height: 50vh;
+
 }
+
+    .cancelButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       width: 50vw;
+        max-width: 100vw;
+        height: 2vw;
+        background-color: #fcd0bd;
+        border: 2.5px #fcd0bd;
+        text-align: center;
+        font-family: "Jost", sans-serif;
+        font-size: 1.2rem;
+    }
+
+
+  .cancelButton:hover {
+        background-color: #f68f51;
+        transition: .2s;
+    }
+
+   .cancelButton:active {
+        background-color: #bde7fa;
+        transition: .2s;
+    }
+
+   .mainDelete form {
+       font-family: "Tw Cen MT";
+       display: flex;
+      width: 50%;
+       padding: 2vw;
+   }
+
+   .mainDelete form button {
+
+      width: 103%;
+   }

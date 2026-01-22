@@ -78,11 +78,12 @@ if (isset($_POST['cancel'])) {
     </p>
 
     <form method="post">
-        <button type="submit" name="confirm">Ja, verwijder</button>
+        <button class="cancelButton" type="submit" name="confirm">Ja, verwijder</button>
+        <a  href="contactDetails.php?id=<?= $orderId ?>" class="cancelButton">
+            Annuleren
+        </a>
     </form>
-    <a href="contactDetails.php?id=<?= $orderId ?>" class="button">
-        Annuleren
-    </a>
+
 </main>
 
 </body>
