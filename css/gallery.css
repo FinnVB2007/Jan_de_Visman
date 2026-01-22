@@ -291,3 +291,33 @@ nav span {
     height: 2.2vh;
     margin: 0 auto;
 }
+
+@media (max-width: 650px) {
+    .links a {
+        padding: 0;
+    }
+
+    .home {
+        display: none;
+    }
+    nav {
+        padding-right: 1.5vw;
+        padding-left: 1.5vw;
+    }
+    .fishBasket img {
+        width: 30px;
+    }
+    .logo img {
+        width: 100px;
+    }
+
+    .event {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 5px;
+    }
+    .event img{
+        width: 50%;
+    }
+}
