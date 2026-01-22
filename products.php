@@ -108,28 +108,13 @@ mysqli_close($db);
 
 <script>
     const hook = document.querySelector('.hook-wrapper');
-    const footer = document.querySelector('footer');
-
-    const speed = 0.4;
-    const margin = 40;
 
     window.addEventListener('scroll', () => {
-        const scrollMove = window.scrollY * speed;
-
-        // huidige visuele posities (viewport-based)
-        const footerRect = footer.getBoundingClientRect();
-        const hookRect = hook.getBoundingClientRect();
-
-        let translateY = scrollMove;
-
-        // ALS hook de footer nadert → stop
-        if (hookRect.bottom + margin >= footerRect.top) {
-            translateY -= (hookRect.bottom + margin - footerRect.top);
-        }
-
-        hook.style.transform = `translateY(${translateY}px)`;
+        const scrollY = window.scrollY;
+        hook.style.transform = `translateY(${scrollY * 0.4}px)`;
     });
 </script>
+
 
 
 

@@ -374,13 +374,12 @@ article {
 .hook-wrapper {
     position: fixed;
     right: 29vw;
-    top: -750px; /* starting position */
+    top: -50vw;   /* start boven het scherm, maar schaalbaar */
     z-index: 10;
     pointer-events: auto;
 }
-
 .hook {
-    width: 120px;
+    width: 15vh;
     height: auto;
     cursor: pointer;
     transition: transform 0.1s linear;
