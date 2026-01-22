@@ -56,15 +56,16 @@ mysqli_close($db);
 </nav>
 
 
-<header>
-    <div>
-    <h1>Bekijk ons assortiment!</h1>
-    <p>Onze verse visproducten zijn van hoge kwaliteit en slagen er zeker in jou te laten genieten!</p>
-    </div>
-</header>
+<!--<header>-->
+<!--    <div>-->
+<!--    <h1>Bekijk ons assortiment!</h1>-->
+<!--    <p>Onze verse visproducten zijn van hoge kwaliteit en slagen er zeker in jou te laten genieten!</p>-->
+<!--    </div>-->
+<!--</header>-->
 
-<section class="product">
+<section>
 <main>
+    <section class="product">
     <?php foreach ($morefishes as $i => $fish) { ?>
     <article>
         <img src="image.php?id=<?php echo $fish['id']; ?>" width="250">
@@ -83,6 +84,10 @@ mysqli_close($db);
         </div>
     </article>
         <?php } ?>
+    </section>
+    <section class="hook-wrapper" id="scrollTopHook">
+        <img src="images/vishaak.png" alt="vishaak" class="hook">
+    </section>
 </main>
 </section>
 
@@ -101,7 +106,22 @@ mysqli_close($db);
     </div>
 </footer>
 
+<script>
+    const hook = document.querySelector('.hook-wrapper');
 
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        hook.style.transform = `translateY(${scrollY * 0.4}px)`;
+    });
+</script>
+<script>
+    document.getElementById('scrollTopHook').addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </body>
 </html>
 
