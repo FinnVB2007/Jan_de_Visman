@@ -132,7 +132,7 @@ footer {
 }
 
 .mediaLogo {
-    width: 2vw;
+    width: 30px;
 }
 
 .footerLogo {
@@ -356,13 +356,23 @@ nav span {
     margin: 0 auto;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 650px) {
+    .links a {
+        padding: 0;
+    }
+
     .home {
     display: none;
     }
     nav {
-        padding-right: 2vw;
-        padding-left: 2vw;
+        padding-right: 1.5vw;
+        padding-left: 1.5vw;
+    }
+    .fishBasket img {
+        width: 30px;
+    }
+    .logo img {
+        width: 100px;
     }
 }
 
