@@ -109,9 +109,14 @@ mysqli_close($db);
 <script>
     const hook = document.querySelector('.hook-wrapper');
 
+    const maxOffset = 600; // 🔴 STOP POINT (px)
+    const speed = 0.4;
+
     window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        hook.style.transform = `translateY(${scrollY * 0.4}px)`;
+        const scrollY = window.scrollY * speed;
+        const limitedScroll = Math.min(scrollY, maxOffset);
+
+        hook.style.transform = `translateY(${limitedScroll}px)`;
     });
 </script>
 <script>
