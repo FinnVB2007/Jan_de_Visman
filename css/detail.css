@@ -279,3 +279,8 @@ nav span {
     width: 6vw;
     min-width: 100px;
 }
+
+.container px-4 {
+    display: flex;
+    flex-direction: row;
+}
