@@ -74,11 +74,29 @@ $cart = $_SESSION['cart'];
 
     <header>
         <h1>Reserveer overzicht</h1>
-        <h2>Vul uw contactgegevens in</h2>
+
     </header>
 
     <main>
         <form class="formBasket" action="" method="post">
+            <h2 class="mainTitle">Deze producten zitten in uw winkelwagen</h2>
+
+            <?php foreach ($cart as $index => $item): ?>
+                <article>
+                    <p><?= htmlspecialchars($item['full'] ?? '') ?></p>
+                    <p><?= htmlspecialchars($item['price'] ?? '') ?></p>
+
+
+                    <button type="submit"
+                            name="remove_index"
+                            value="<?= $index ?>"
+                            formaction="removeProduct.php">
+                        Verwijderen
+                    </button>
+                </article>
+            <?php endforeach; ?>
+
+            <h2>Vul uw contactgegevens in</h2>
             <label for="name">Naam *</label>
             <input type="text" id="name" name="name" placeholder="Naam" value="<?= htmlentities($name) ?>">
             <?php if (isset($errors['name'])): ?>
@@ -97,22 +115,6 @@ $cart = $_SESSION['cart'];
                 <span class="help is-danger"><?= htmlentities($errors['number']) ?></span>
             <?php endif; ?>
 
-            <h2 class="mainTitle">Deze producten zitten in uw winkelwagen</h2>
-
-            <?php foreach ($cart as $index => $item): ?>
-                <article>
-                    <p><?= htmlspecialchars($item['full'] ?? '') ?></p>
-                    <p><?= htmlspecialchars($item['price'] ?? '') ?></p>
-
-
-                    <button type="submit"
-                            name="remove_index"
-                            value="<?= $index ?>"
-                            formaction="removeProduct.php">
-                        Verwijderen
-                    </button>
-                </article>
-            <?php endforeach; ?>
 
             <button class="endForm" name="submit" type="submit">Reserveer!</button>
         </form>
