@@ -315,7 +315,8 @@ nav span {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        gap: 5px;
+        gap: 15px;
+        margin-bottom: 3vh;
     }
     .event img{
         width: 50%;
