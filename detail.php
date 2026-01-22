@@ -69,15 +69,15 @@ mysqli_close($db);
 <div class="container px-4">
     <h1 class="title mt-4"><?= $fish['name'] ?></h1>
     <section class="content">
-        <ul>
+
             <div class="info">
             <li>Volledige naam: <?= $fish['full_name'] ?></li>
             <li>Price range: <?= $fish['price_range'] ?></li>
             </div>
             <img src="image.php?id=<?php echo $id; ?>" width="250">
-        </ul>
+
     </section>
-    <div>
+    <div class="knop">
         <form action="products.php">
         <a class="button" href="products.php">Terug naar productpagina</a>
         </form>
