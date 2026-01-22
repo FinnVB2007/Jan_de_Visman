@@ -136,7 +136,8 @@ footer {
 }
 
 .footerLogo {
-    width: 10vw;
+    width: 167px;
+    height: auto;
 }
 
 .footerLeft p {
@@ -353,4 +354,18 @@ nav span {
     width: 5vw;
     height: 2.2vh;
     margin: 0 auto;
+}
+
+@media (max-width: 630px) {
+    .home {
+    display: none;
+    }
+    nav {
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+
 }

@@ -146,7 +146,8 @@ footer {
 }
 
 .footerLogo {
-    width: 10vw;
+    width: 167px;
+    height: auto;
 }
 
 .footerLeft p {
@@ -373,7 +374,7 @@ article {
 .hook-wrapper {
     position: fixed;
     right: 29vw;
-    top: -70vh; /* starting position */
+    top: -750px; /* starting position */
     z-index: 10;
     pointer-events: auto;
 }
