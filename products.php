@@ -109,7 +109,7 @@ mysqli_close($db);
 <script>
     const hook = document.querySelector('.hook-wrapper');
 
-    const maxOffset = 600; // 🔴 STOP POINT (px)
+    const maxOffset = 550; // 🔴 STOP POINT (px)
     const speed = 0.4;
 
     window.addEventListener('scroll', () => {
