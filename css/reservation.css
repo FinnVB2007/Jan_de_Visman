@@ -251,7 +251,8 @@ button {
     border-radius: 10%;
     font-size: 1rem;
     margin: 0.35vw;
-
+    min-width: 100px;
+    width: 100%;
 }
 
 button:hover {
@@ -326,10 +327,9 @@ form span {
 }
 
 .endForm {
-text-align: center;
-    margin-left: 17.5vw;
-    margin-bottom: 3vh;
-    width: 13vw;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 nav span {
 
