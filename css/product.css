@@ -211,7 +211,7 @@ header div {
 main {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 17px;
     padding-bottom: 3vh;
     padding-top: 4vh;
     background-color: #fffcf8;
@@ -353,4 +353,14 @@ main form a {
     font-size: 1.2rem;
     width: 100%;
 
+}
+
+article {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
 }

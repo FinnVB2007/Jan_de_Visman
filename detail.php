@@ -70,8 +70,10 @@ mysqli_close($db);
     <h1 class="title mt-4"><?= $fish['name'] ?></h1>
     <section class="content">
         <ul>
+            <div class="info">
             <li>Volledige naam: <?= $fish['full_name'] ?></li>
             <li>Price range: <?= $fish['price_range'] ?></li>
+            </div>
             <img src="image.php?id=<?php echo $id; ?>" width="250">
         </ul>
     </section>
