@@ -355,6 +355,7 @@ nav span {
     height: 2.2vh;
     margin: 0 auto;
 }
+/* Mobile responsive */
 
 @media (max-width: 650px) {
     .links a {
