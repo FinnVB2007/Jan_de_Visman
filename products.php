@@ -56,15 +56,16 @@ mysqli_close($db);
 </nav>
 
 
-<header>
-    <div>
-    <h1>Bekijk ons assortiment!</h1>
-    <p>Onze verse visproducten zijn van hoge kwaliteit en slagen er zeker in jou te laten genieten!</p>
-    </div>
-</header>
+<!--<header>-->
+<!--    <div>-->
+<!--    <h1>Bekijk ons assortiment!</h1>-->
+<!--    <p>Onze verse visproducten zijn van hoge kwaliteit en slagen er zeker in jou te laten genieten!</p>-->
+<!--    </div>-->
+<!--</header>-->
 
-<section class="product">
+<section>
 <main>
+    <section class="product">
     <?php foreach ($morefishes as $i => $fish) { ?>
     <article>
         <img src="image.php?id=<?php echo $fish['id']; ?>" width="250">
@@ -83,6 +84,10 @@ mysqli_close($db);
         </div>
     </article>
         <?php } ?>
+    </section>
+    <section class="hook-wrapper" id="scrollTopHook">
+        <img src="images/vishaak.png" alt="vishaak" class="hook">
+    </section>
 </main>
 </section>
 
@@ -101,7 +106,33 @@ mysqli_close($db);
     </div>
 </footer>
 
+<script>
+    const hook = document.querySelector('.hook-wrapper');
+    const footer = document.querySelector('footer');
 
+    const speed = 0.4;
+    const margin = 100; // space above footer
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY * speed;
+
+        const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+        const maxOffset = footerTop - window.innerHeight + margin;
+
+        const limitedScroll = Math.min(scrollY, maxOffset);
+
+        hook.style.transform = `translateY(${limitedScroll}px)`;
+    });
+</script>
+
+<script>
+    document.getElementById('scrollTopHook').addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
 </body>
 </html>
 
