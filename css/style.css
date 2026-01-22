@@ -168,6 +168,7 @@ main section {
     padding-top: 5vh;
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     transform: translateX(-100px);
     opacity: 0;
@@ -178,6 +179,7 @@ main section {
 .bottom {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding-bottom: 5vh;
 
     transform: translateX(100px);
@@ -449,3 +451,52 @@ form div {
 
       width: 103%;
    }
+
+/* Mobile responisve */
+
+@media (max-width: 900px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main section div {
+        width: 70vw;
+    }
+
+    main section div img   {
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .links a {
+        padding: 0;
+    }
+
+    .home {
+        display: none;
+    }
+    nav {
+        padding-right: 1.5vw;
+        padding-left: 1.5vw;
+    }
+    .fishBasket img {
+        width: 30px;
+    }
+    .logo img {
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+}
