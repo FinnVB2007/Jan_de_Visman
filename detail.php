@@ -78,12 +78,12 @@ mysqli_close($db);
 
     </section>
     <div class="knop">
-        <form action="products.php">
-        <a class="button" href="products.php">Terug naar productpagina</a>
-        </form>
         <form class="fullButton" action="addToFishbasket.php" method="post">
             <input type="hidden" name="id" value="<?= $fish['id']; ?>">
             <button type="submit">Reserveren</button>
+        </form>
+        <form action="products.php">
+            <a class="button" href="products.php">Terug naar productpagina</a>
         </form>
     </div>
 </div>
