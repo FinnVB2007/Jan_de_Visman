@@ -111,19 +111,27 @@ mysqli_close($db);
     const footer = document.querySelector('footer');
 
     const speed = 0.4;
-    const margin = 100; // space above footer
+    const margin = 40;
 
     window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY * speed;
+        const scrollMove = window.scrollY * speed;
 
-        const footerTop = footer.getBoundingClientRect().top + window.scrollY;
-        const maxOffset = footerTop - window.innerHeight + margin;
+        // huidige visuele posities (viewport-based)
+        const footerRect = footer.getBoundingClientRect();
+        const hookRect = hook.getBoundingClientRect();
 
-        const limitedScroll = Math.min(scrollY, maxOffset);
+        let translateY = scrollMove;
 
-        hook.style.transform = `translateY(${limitedScroll}px)`;
+        // ALS hook de footer nadert → stop
+        if (hookRect.bottom + margin >= footerRect.top) {
+            translateY -= (hookRect.bottom + margin - footerRect.top);
+        }
+
+        hook.style.transform = `translateY(${translateY}px)`;
     });
 </script>
+
+
 
 <script>
     document.getElementById('scrollTopHook').addEventListener('click', () => {
