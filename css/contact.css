@@ -311,3 +311,9 @@ nav span {
     height: 2.2vh;
     margin: 0 auto;
 }
+
+@media (max-width: 986px) {
+    header {
+        display: none;
+    }
+}
