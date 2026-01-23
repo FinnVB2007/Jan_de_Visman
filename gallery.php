@@ -20,6 +20,7 @@ session_start()
     <div class="logo">
         <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
     </div>
+
     <div class="links">
         <a class="home" href="index.php">Home</a>
         <a href="products.php">Producten</a>
@@ -35,7 +36,23 @@ session_start()
             </a>
         </section>
     </div>
+
+    <!-- Burger -->
+    <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </nav>
+
+<!-- Mobiel menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a class="home" href="index.php">Home</a>
+    <a href="products.php">Producten</a>
+    <a href="gallery.php">Galerij</a>
+    <a href="contact.php">Contact</a>
+    <a href="fishbasket.php">Visnetje</a>
+</div>
 <header> <h1>Onze visavonturen</h1></header>
 <main>
 
@@ -155,6 +172,13 @@ session_start()
     // Sluiten bij klik buiten afbeelding
     lightbox.addEventListener('click', e => {
         if (e.target === lightbox) closeLightbox();
+    });
+
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    burger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('show');
     });
 </script>
 
