@@ -119,7 +119,7 @@ mysqli_close($db);
 
         </tbody>
     </table>
-    <input type="button" value="Print lijst" onclick="printPage()" class="noPrint" />
+    <input class="input" type="button" value="Print lijst" onclick="printPage()" class="noPrint" />
 </main>
 
 <footer class="noPrint">
