@@ -430,6 +430,65 @@ article {
 
 }
 
-@media (max-width: 480px) {
 
+/* Burger menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobiel dropdown menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #e0d9cc;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    text-align: center;
+}
+
+.mobile-menu a {
+    padding: 12px 0;
+    border-top: 1px solid #d3c9b7;
+    color: black;
+    text-decoration: none;
+    font-family: "Playball", cursive;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    background-color: #f68f51;
+    transform: scale(1.05);
+    border-radius: 5%;
+}
+
+.mobile-menu.show {
+    display: flex;
+    max-height: 500px;
+}
+
+/* Responsief: burger zichtbaar onder 320px */
+@media (max-width: 480px) {
+    .links {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+    .home {
+        display: block;
+    }
 }

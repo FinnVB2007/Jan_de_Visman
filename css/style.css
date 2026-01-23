@@ -597,4 +597,7 @@ form div {
     .burger {
         display: flex;
     }
+    .home {
+        display: block;
+    }
 }

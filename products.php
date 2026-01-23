@@ -38,6 +38,7 @@ mysqli_close($db);
     <div class="logo">
         <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
     </div>
+
     <div class="links">
         <a class="home" href="index.php">Home</a>
         <a href="products.php">Producten</a>
@@ -53,7 +54,23 @@ mysqli_close($db);
             </a>
         </section>
     </div>
+
+    <!-- Burger -->
+    <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </nav>
+
+<!-- Mobiel menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a class="home" href="index.php">Home</a>
+    <a href="products.php">Producten</a>
+    <a href="gallery.php">Galerij</a>
+    <a href="contact.php">Contact</a>
+    <a href="fishbasket.php">Visnetje</a>
+</div>
 
 
 <!--<header>-->
@@ -124,6 +141,17 @@ mysqli_close($db);
         });
     });
 </script>
+
+<script>
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    burger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('show');
+    });
+</script>
+
+
 </body>
 </html>
 

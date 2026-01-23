@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
     <a href="products.php">Producten</a>
     <a href="gallery.php">Galerij</a>
     <a href="contact.php">Contact</a>
-    <a href="fishbasket.php">Mand</a>
+    <a href="fishbasket.php">Visnetje</a>
 </div>
 
 <?php if (isset($_SESSION['empty'])): ?>
