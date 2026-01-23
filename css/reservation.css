@@ -108,7 +108,7 @@ nav img {
 .links a:hover {
     background-color: #f68f51;
     transform: scale(1.1);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .links a:active {
@@ -227,11 +227,6 @@ header p {
     width: 5vw;
 }
 
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
-}
-
 main article {
     display: flex;
     flex-direction: column;
@@ -262,11 +257,6 @@ button:hover {
     transition: .2s;
 }
 
-
-nav a:hover {
-    transform: scale(1.2);
-    transition: 6s;
-}
 
 .formConfirm {
     display: flex;
