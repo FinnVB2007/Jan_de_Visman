@@ -67,25 +67,30 @@ mysqli_close($db);
 <body>
 <main>
 <div class="container px-4">
-    <h1 class="title mt-4"><?= $fish['name'] ?></h1>
-    <section class="content">
 
-            <div class="info">
+    <section class="content">
+        <div>
+            <img src="image.php?id=<?php echo $id; ?>" width="250">
+        </div>
+
+        <div class="info">
+            <h1 class="title"><?= $fish['name'] ?></h1>
             <li>Volledige naam: <?= $fish['full_name'] ?></li>
             <li>Price range: <?= $fish['price_range'] ?></li>
+            <div class="knop">
+                <form action="products.php" class="gapFix">
+                    <button type="submit">Terug</button>
+                </form>
+                <form class="fullButton" action="addToFishbasket.php" method="post">
+                    <input type="hidden" name="id" value="<?= $fish['id']; ?>">
+                    <button type="submit">Reserveren</button>
+                </form>
             </div>
-            <img src="image.php?id=<?php echo $id; ?>" width="250">
+        </div>
+
 
     </section>
-    <div class="knop">
-        <form class="fullButton" action="addToFishbasket.php" method="post">
-            <input type="hidden" name="id" value="<?= $fish['id']; ?>">
-            <button type="submit">Reserveren</button>
-        </form>
-        <form action="products.php">
-            <a class="button" href="products.php">Terug naar productpagina</a>
-        </form>
-    </div>
+
 </div>
 </main>
 <footer>

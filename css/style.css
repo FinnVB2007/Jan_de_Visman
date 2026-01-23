@@ -519,7 +519,7 @@ form div {
     }
 }
 
-input {
+.input {
     margin-top: 2.5vw;
     width: 100%;
     max-width: 100vw;
@@ -530,12 +530,12 @@ input {
     font-size: 1.5rem;
 }
 
-input:hover {
+.input:hover {
     background-color: #f68f51;
     transition: .2s;
 }
 
-input:active {
+.input:active {
     background-color: #bde7fa;
     transition: .2s;
 }
