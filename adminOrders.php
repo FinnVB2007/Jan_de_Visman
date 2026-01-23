@@ -71,7 +71,7 @@ mysqli_close($db);
 <body>
 
 
-<nav>
+<nav class="noPrint">
     <div class="logo">
         <a href="adminOrders.php">
             <img src="images/Logo_JandeVisman.png" alt="Jan de Visman">
@@ -83,7 +83,11 @@ mysqli_close($db);
         <a href="adminLogout.php">Logout</a>
     </div>
 </nav>
-
+<script>
+    function printPage() {
+        window.print();
+    }
+</script>
 <main>
     <h1 class="adminh1">
         Bestellingen
@@ -91,12 +95,12 @@ mysqli_close($db);
     <table class="table mx-auto">
         <thead>
         <tr>
-            <th>ID</th>
+            <th>Nummer</th>
             <th>Naam</th>
             <th>E-mail</th>
             <th>Telefoonnummer</th>
             <th>Producten</th>
-            <th></th>
+            <th class="noPrint"></th>
 
         </tr>
         </thead>
@@ -109,15 +113,16 @@ mysqli_close($db);
                 <td><?= htmlspecialchars($order['email']) ?></td>
                 <td><?= htmlspecialchars($order['number']) ?></td>
                 <td><?= implode(', ', $order['reservation']) ?></td>
-                <td><a href="orderDetails.php?id=<?= $order['id'] ?>">Details</a></td>
+                <td class="noPrint"><a href="orderDetails.php?id=<?= $order['id'] ?>" class="noPrint">Details</a></td>
             </tr>
         <?php endforeach; ?>
 
         </tbody>
     </table>
+    <input type="button" value="Print lijst" onclick="printPage()" class="noPrint" />
 </main>
 
-<footer>
+<footer class="noPrint">
     <div class="footerLeft">
         <div>
             <a href="adminOrders.php">
