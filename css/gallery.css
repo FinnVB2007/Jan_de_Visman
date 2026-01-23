@@ -292,6 +292,26 @@ nav span {
     margin: 0 auto;
 }
 
+/* Mobile responsive */
+@media (max-width: 1020px) {
+    .lightbox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .controls {
+        position: static;   /* haalt absolute positioning weg */
+        gap: 40px;
+    }
+
+    .lightbox-img {
+        max-height: 65%;
+    }
+}
+
+
 @media (max-width: 650px) {
     .links a {
         padding: 0;
