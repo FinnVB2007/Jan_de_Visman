@@ -290,7 +290,14 @@ nav span {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 0;
 }
+
+.gapFix {
+    padding-right: 10px;
+}
+
+
 
 @media (max-width: 650px) {
     .links a {
