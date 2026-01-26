@@ -80,6 +80,7 @@ mysqli_close($db);
     <div class="links">
         <a href="adminOrders.php">Bestellingen</a>
         <a href="adminContact.php">Berichten</a>
+        <a href="adminProducts.php">Producten</a>
         <a href="adminLogout.php">Logout</a>
     </div>
 </nav>
