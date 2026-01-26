@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Product toevoegen</title>
+    <title>Product Toevoegen</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
@@ -130,6 +130,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 </div>
 </main>
+<footer>
+    <div class="footerLeft">
+        <div>
+            <a href="adminOrders.php"><img src="images/Logo_Footer_JandeVisman.png" alt="" class="footerLogo"></a>
+        </div>
+        <div>
+            <p>© 2022 Jan de Visman</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/jandevisman/"><img src="images/facebooklogo.png" alt="" class="mediaLogo"></a>
+            <a href="https://www.instagram.com/jande_visman/"><img src="images/instalogo.png" alt="" class="mediaLogo"></a>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

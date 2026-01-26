@@ -469,6 +469,11 @@ form div {
     width: 103%;
 }
 
+.mainDelete {
+    margin-bottom: 14vh;
+}
+
+
 /* Mobile responisve */
 
 @media (max-width: 900px) {
