@@ -51,7 +51,7 @@ mysqli_close($db);
 </nav>
 <main>
 <h1 class="adminh1">
-    Bestellingen
+   Producten
 </h1>
 <table class="table mx-auto">
     <thead>

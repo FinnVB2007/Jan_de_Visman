@@ -438,8 +438,8 @@ form div {
     align-text: center;
     justify-content: center;
     align-items: center;
-    width: 85vw;
-    max-width: 85vw;
+    width: 100%;
+  max-width: 97.2vw;
     height: 2vw;
     background-color: #fcd0bd;
     border: 2.5px #fcd0bd;

@@ -118,9 +118,9 @@ mysqli_close($db);
             </tr>
         <?php endforeach; ?>
 
-        </tbody>
+        </tbody>1
     </table>
-    <input class="input" type="button" value="Print lijst" onclick="printPage()" class="noPrint" />
+    <input class="input" type="button" value="Print lijst"  onclick="printPage()" class="noPrint" />
 </main>
 
 <footer class="noPrint">
