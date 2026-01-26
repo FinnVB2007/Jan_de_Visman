@@ -93,8 +93,8 @@ mysqli_close($db);
 
         <div class="info">
             <h1 class="title"><?= $fish['name'] ?></h1>
-            <li>Volledige naam: <?= $fish['full_name'] ?></li>
-            <li>Price range: <?= $fish['price_range'] ?></li>
+            <li><?= $fish['full_name'] ?></li>
+            <li><?= $fish['price_range'] ?></li>
             <div class="knop">
                 <form action="products.php" class="gapFix">
                     <button type="submit">Terug</button>
