@@ -77,8 +77,8 @@ mysqli_close($db);
 
     </tbody>
 </table>
-    <div>
-        <a href="adminCreate.php" class="cancelButton">Nieuw Product Toevoegen</a>
+    <div class="prod">
+        <a href="adminCreate.php" class="productButton">Nieuw Product Toevoegen</a>
     </div>
 </main>
 

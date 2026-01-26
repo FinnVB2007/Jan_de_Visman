@@ -429,6 +429,23 @@ form div {
     font-size: 1.2rem;
 }
 
+.prod {
+    align-text: center;
+}
+
+.productButton {
+    display: flex;
+    align-text: center;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    max-width: 85vw;
+    height: 2vw;
+    background-color: #fcd0bd;
+    border: 2.5px #fcd0bd;
+    text-align: center;
+    font-family: "Playball", cursive;
+}
 
 .cancelButton:hover {
     background-color: #f68f51;

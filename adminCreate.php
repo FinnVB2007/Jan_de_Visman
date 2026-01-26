@@ -69,6 +69,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>Product toevoegen</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
 
@@ -121,7 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <span class="error"><?= $errors['image'] ?? '' ?></span>
         <?php } ?>
 
-        <button type="submit">Opslaan</button>
+        <button type="submit" class="input">Opslaan</button>
 
     </form>
 </div>
