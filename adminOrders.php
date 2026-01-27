@@ -118,7 +118,7 @@ mysqli_close($db);
             </tr>
         <?php endforeach; ?>
 
-        </tbody>1
+        </tbody>
     </table>
     <input class="input" type="button" value="Print lijst"  onclick="printPage()" class="noPrint" />
 </main>

@@ -610,7 +610,7 @@ form div {
     max-height: 500px;
 }
 
-/* Responsief: burger zichtbaar onder 320px */
+/* Responsief: burger zichtbaar onder 480px */
 @media (max-width: 480px) {
     .links {
         display: none;
@@ -622,4 +622,8 @@ form div {
     .home {
         display: block;
     }
+}
+
+@media (max-width: 1175px) {
+
 }
