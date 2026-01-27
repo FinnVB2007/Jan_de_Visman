@@ -387,6 +387,7 @@ form div {
 }
 
 .adminDiv {
+    display: flex;
     margin-top: 2vh;
     margin-bottom: 4vh;
 }
@@ -645,5 +646,12 @@ form div {
     }
     .delete {
         display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    main a {
+        display: flex;
+        flex-direction: column;
     }
 }
