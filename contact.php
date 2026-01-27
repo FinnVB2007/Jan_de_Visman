@@ -47,6 +47,8 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" href="css/contact.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
@@ -57,6 +59,7 @@ if (isset($_POST['submit'])) {
     <div class="logo">
         <a href="index.php"><img src="images/Logo_JandeVisman.png" alt="Jan de Visman"></a>
     </div>
+
     <div class="links">
         <a class="home" href="index.php">Home</a>
         <a href="products.php">Producten</a>
