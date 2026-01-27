@@ -71,8 +71,8 @@ mysqli_close($db);
         <tr>
             <th>ID</th>
             <th>Naam</th>
-            <th>E-mail</th>
-            <th>Message</th>
+            <th class="delete">E-mail</th>
+            <th class="delete">Message</th>
             <th></th>
         </tr>
         </thead>
@@ -84,8 +84,8 @@ mysqli_close($db);
             <tr>
                 <td><?= $message['id'] ?></td>
                 <td><?= $message['name'] ?></td>
-                <td><?= $message['email'] ?></td>
-                <td><?= $message['message'] ?></td>
+                <td class="delete"><?= $message['email'] ?></td>
+                <td class="delete"><?= $message['message'] ?></td>
                 <td><a href="contactDetails.php?id=<?= $message['id'] ?>">Details</a></td>
             </tr>
         <?php } ?>

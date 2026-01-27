@@ -115,8 +115,8 @@ mysqli_close($db);
         <tr>
             <th>Nummer</th>
             <th>Naam</th>
-            <th>E-mail</th>
-            <th>Telefoonnummer</th>
+            <th class="delete">E-mail</th>
+            <th class="delete">Telefoonnummer</th>
             <th>Producten</th>
             <th class="noPrint"></th>
 
@@ -128,8 +128,8 @@ mysqli_close($db);
             <tr>
                 <td><?= htmlspecialchars($order['id']) ?></td>
                 <td><?= htmlspecialchars($order['name']) ?></td>
-                <td><?= htmlspecialchars($order['email']) ?></td>
-                <td><?= htmlspecialchars($order['number']) ?></td>
+                <td class="delete"><?= htmlspecialchars($order['email']) ?></td>
+                <td class="delete"><?= htmlspecialchars($order['number']) ?></td>
                 <td><?= implode(', ', $order['reservation']) ?></td>
                 <td class="noPrint"><a href="orderDetails.php?id=<?= $order['id'] ?>" class="noPrint">Details</a></td>
             </tr>
