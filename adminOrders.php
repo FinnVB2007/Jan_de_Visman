@@ -62,7 +62,7 @@ mysqli_close($db);
 <head>
     <title>Admin - Bestellingen</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="admin.css"/>
+    <link rel="stylesheet" href="css/admin.css">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <style>
@@ -120,7 +120,7 @@ mysqli_close($db);
             </tr>
         <?php endforeach; ?>
 
-        </tbody>1
+        </tbody>
     </table>
     <input class="input" type="button" value="Print lijst"  onclick="printPage()" class="noPrint" />
 </main>
