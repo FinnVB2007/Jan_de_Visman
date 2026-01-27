@@ -317,7 +317,7 @@ nav span {
 
 
 
-@media (max-width: 986px) {
+@media (max-width: 650px) {
     header {
         display: none;
     }
