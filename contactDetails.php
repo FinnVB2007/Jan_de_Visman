@@ -68,8 +68,8 @@ mysqli_close($db);
 
     <br>
         <div class="adminDiv">
-    <a href="adminContact.php">Terug naar berichten</a>
-    <a href="contactDelete.php?id=<?= $id ?>">Delete Bericht</a>
+            <a class="adminDiv" href="adminContact.php">Terug naar berichten</a>
+            <a class="adminDiv" href="contactDelete.php?id=<?= $id ?>">Delete Bericht</a>
         </div>
     </section>
 </main>
