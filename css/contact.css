@@ -18,7 +18,7 @@ P {
 header {
     display: flex;
     flex-direction: column;
-    background-image: url("../images/bannercontact.png");
+    background-image: url("../images/contact.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
