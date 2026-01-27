@@ -437,8 +437,9 @@ form div {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 97.2vw;
-    height: 2vw;
+    max-width: 50vw;
+    height: 5vw;
+    margin-left: 25%;
     background-color: #fcd0bd;
     border: 2.5px #fcd0bd;
     text-align: center;
@@ -611,6 +612,7 @@ form div {
     max-height: 500px;
 }
 
+
 /* Responsief: burger zichtbaar onder 320px */
 @media (max-width: 520px) {
     .links {
@@ -623,5 +625,16 @@ form div {
 
     .home {
         display: block;
+    }
+
+    .productButton {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        height: 6vh;
+        width: 50%;
+        margin-left: 25%;
     }
 }
