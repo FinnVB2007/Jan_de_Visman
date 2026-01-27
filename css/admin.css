@@ -469,6 +469,10 @@ form div {
     .logo img {
         width: 100px;
     }
+
+    form button {
+        height: 8.5vw
+    }
 }
 
 
