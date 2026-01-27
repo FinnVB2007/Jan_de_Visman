@@ -50,7 +50,22 @@ mysqli_close($db);
         <a href="adminProducts.php">Producten</a>
         <a href="adminLogout.php">Logout</a>
     </div>
+    <!-- Burger -->
+    <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </nav>
+
+<!-- Mobiel menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="adminOrders.php">Bestellingen</a>
+    <a href="adminContact.php">Berichten</a>
+    <a href="adminProducts.php">Producten</a>
+    <a href="adminLogout.php">Logout</a>
+</div>
+
 <main>
 <h1 class="adminh1">
    Producten
@@ -104,6 +119,15 @@ mysqli_close($db);
         </div>
     </div>
 </footer>
+
+<script>
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    burger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('show');
+    });
+</script>
 
 </body>
 </html>
