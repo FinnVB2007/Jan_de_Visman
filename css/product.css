@@ -375,7 +375,8 @@ article {
 .hook-wrapper {
     position: fixed;
     right: 29vw;
-    top: -50vw;   /* start boven het scherm, maar schaalbaar */
+    top: -54vw;   /* start boven het scherm, maar schaalbaar */
+
     z-index: 10;
     pointer-events: auto;
 }

@@ -128,7 +128,7 @@ mysqli_close($db);
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
-        hook.style.transform = `translateY(${scrollY * 0.3}px)`;
+        hook.style.transform = `translateY(${scrollY * 0.02}vw)`;
     });
 </script>
 
