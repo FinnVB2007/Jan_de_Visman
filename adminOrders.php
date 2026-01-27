@@ -62,7 +62,7 @@ mysqli_close($db);
 <head>
     <title>Admin - Bestellingen</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/admin.css"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
@@ -118,7 +118,7 @@ mysqli_close($db);
             </tr>
         <?php endforeach; ?>
 
-        </tbody>1
+        </tbody>
     </table>
     <input class="input" type="button" value="Print lijst"  onclick="printPage()" class="noPrint" />
 </main>
