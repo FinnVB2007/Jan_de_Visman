@@ -323,7 +323,6 @@ nav span {
     }
     form input{
     padding: 1.5vw;
-        font-size: 1.9rem;
     }
     form label {
         padding: 1vw;
@@ -331,7 +330,6 @@ nav span {
     form textarea {
         height: 10vh;
         padding: 1.5vw;
-        font-size: 1.9rem;
     }
     form button {
         margin-top: 13vh;
@@ -340,7 +338,6 @@ nav span {
         align-items: center;
         padding: 3vw;
         text-align: center;
-        font-size: 1.9rem;
     }
 }
 
