@@ -47,7 +47,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0vh 7vw;
+    padding: 0 7vw;
     background-color: #e0d9cc;
     align-items: center;
 }
@@ -150,7 +150,7 @@ footer {
 }
 
 .footerLeft div {
-    margin: 0vw;
+    margin: 0;
 }
 
 
@@ -194,7 +194,7 @@ main section {
 
 
 main section div {
-    margin: 0vh 2vw;
+    margin: 0 2vw;
     width: 40vw;
 }
 
@@ -253,7 +253,7 @@ td {
 }
 
 td a {
-    border: 0px solid rgba(246, 143, 81, 0);
+    border: 0 solid rgba(246, 143, 81, 0);
 }
 
 td a:hover {
