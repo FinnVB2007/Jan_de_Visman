@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
         $errors['email'] = 'Het e-mailadres moet ingevuld en geldig zijn';
     }
 
-    if (trim($number) === '' || !preg_match('/^(?:\+31|31|0)\d{9}$/', $number) {
+    if (trim($number) === '' || !preg_match('/^(?:\+31|31|0)\d{9}$/', $number)) {
         $errors['number'] = 'Het nummer moet een geldig telefoonnummer zijn';
     }
 
